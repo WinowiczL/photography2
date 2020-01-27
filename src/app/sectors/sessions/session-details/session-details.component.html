@@ -1,0 +1,17 @@
+<ngb-tabset class="tabset1" [justify]="'justified'">
+  <ngb-tab title="Opis" id="opis">
+    <ng-template ngbTabContent>
+      <app-session-description [sessionType]="sessionType"></app-session-description>
+    </ng-template>
+  </ngb-tab>
+  <ngb-tab title="Cennik">
+    <ng-template ngbTabContent>
+      <app-session-price></app-session-price>
+    </ng-template>
+  </ngb-tab>
+  <ngb-tab title="Przygotowanie">
+    <ng-template ngbTabContent>
+     <app-session-prepare></app-session-prepare>
+    </ng-template>
+  </ngb-tab>
+</ngb-tabset>

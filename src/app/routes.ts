@@ -5,6 +5,6 @@ export const appRoutes: Routes = [
   {
     path: '', component:
     AppComponent,
-    children: []
-  }
+  },
+
 ];

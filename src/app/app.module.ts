@@ -12,10 +12,16 @@ import { VoucherComponent } from './sectors/voucher/voucher.component';
 import { ContactComponent } from './sectors/contact/contact.component';
 import { CardComponent } from './sectors/sessions/card/card.component';
 import { CardDetailComponent } from './sectors/sessions/card-detail/card-detail.component';
-import {ReactiveFormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { FooterComponent } from './sectors/footer/footer.component';
 import {RouterModule} from '@angular/router';
 import {appRoutes} from './routes';
+import { CardsComponent } from './sectors/sessions/cards/cards.component';
+import { SessionDetailsComponent } from './sectors/sessions/session-details/session-details.component';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { SessionDescriptionComponent } from './sectors/sessions/session-details/session-description/session-description.component';
+import { SessionPriceComponent } from './sectors/sessions/session-details/session-price/session-price.component';
+import { SessionPrepareComponent } from './sectors/sessions/session-details/session-prepare/session-prepare.component';
 
 @NgModule({
   declarations: [
@@ -30,15 +36,22 @@ import {appRoutes} from './routes';
     CardComponent,
     CardDetailComponent,
     FooterComponent,
+    CardsComponent,
+    SessionDetailsComponent,
+    SessionDescriptionComponent,
+    SessionPriceComponent,
+    SessionPrepareComponent,
   ],
   imports: [
     BrowserModule,
+    NgbModule,
     AppRoutingModule,
     ReactiveFormsModule,
     RouterModule.forRoot(appRoutes, {
       anchorScrolling: 'enabled',
       scrollPositionRestoration: 'enabled'
     }),
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

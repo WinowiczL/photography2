@@ -1,0 +1,37 @@
+<div class="row break">
+  <div class="col-4">
+    <app-card
+      [imageSource]="sessions[0].imageSrc" [cardTitle]="sessions[0].cardTitle"
+      [imageAlt]="sessions[0].imageAlt" (click)="onSessionSelect('noworodkowa')"
+    ></app-card>
+  </div>
+  <div class="col-4">
+    <app-card
+      [imageSource]="sessions[1].imageSrc" [cardTitle]="sessions[1].cardTitle"
+      [imageAlt]="sessions[1].imageAlt" (click)="onSessionSelect('dziecięca')">
+
+    </app-card>
+  </div>
+  <div class="col-4">
+    <app-card
+      [imageSource]="sessions[2].imageSrc" [cardTitle]="sessions[2].cardTitle"
+      [imageAlt]="sessions[2].imageAlt" (click)="onSessionSelect('ciążowa')"></app-card>
+  </div>
+</div>
+<div class="row break">
+  <div class="col-4">
+    <app-card
+      [imageSource]="sessions[3].imageSrc" [cardTitle]="sessions[3].cardTitle"
+      [imageAlt]="sessions[3].imageAlt" (click)="onSessionSelect('rodzinna')"></app-card>
+  </div>
+  <div class="col-4">
+    <app-card
+      [imageSource]="sessions[3].imageSrc" [cardTitle]="sessions[4].cardTitle"
+      [imageAlt]="sessions[4].imageAlt" (click)="onSessionSelect('portretowa')"></app-card>
+  </div>
+  <div class="col-4">
+    <app-card
+      [imageSource]="sessions[5].imageSrc" [cardTitle]="sessions[5].cardTitle"
+      [imageAlt]="sessions[5].imageAlt" (click)="onSessionSelect('ślubna')"></app-card>
+  </div>
+</div>

@@ -1,0 +1,15 @@
+@import "../../../../assets/styles/custom-styles";
+
+:host ::ng-deep .tabset1 a.nav-link {
+  color: $primaryColor;
+  border-bottom: 1px solid $primaryColor;
+}
+
+:host ::ng-deep .tabset1 a.nav-link.active {
+  border-top: 1px solid $primaryColor;
+  border-right: 1px solid $primaryColor;
+  border-left: 1px solid $primaryColor;
+  border-bottom: 1px solid $whiteColor;
+  color: $primaryColor;
+  font-weight: bold;
+}
