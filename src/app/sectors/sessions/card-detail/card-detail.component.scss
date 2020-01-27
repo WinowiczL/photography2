@@ -1,0 +1,50 @@
+@import "../../../../assets/styles/custom-styles";
+
+.image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.arrow {
+  height: 24px;
+  margin-right: 10px;
+}
+
+.text{
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.go-back {
+  display: flex;
+  justify-content: start;
+  text-align: center;
+
+  h5{
+    text-align: center;
+    margin: 0;
+  }
+
+  :hover {
+    cursor: pointer;
+    color: $primaryColor;
+
+    path {
+      fill: $primaryColor;
+    }
+  }
+}
+
+.portfolio-button {
+  margin-top: 6px;
+  color: $primaryColor;
+  width: 100%;
+  border: 1px solid $primaryColor;
+  border-radius: 0;
+}
+
+.portfolio-button:hover {
+  background-color: $primaryColor;
+  color: white;
+}

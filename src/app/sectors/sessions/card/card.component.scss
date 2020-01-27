@@ -1,0 +1,50 @@
+@import "../../../../assets/styles/custom-styles";
+
+:host {
+  :hover {
+    cursor: pointer;
+    box-shadow: 0 0 1em $boxShadowPrimary;
+
+    .card-img {
+      opacity: 1 !important;
+    }
+
+    .card-title {
+      box-shadow: none !important;
+      background-color: $primaryColor;
+      border: 1px solid $whiteColor;
+    }
+  }
+}
+
+.card {
+  max-height: 300px;
+  max-width: 400px;
+  border: 1px solid $primaryColor;
+  background-color: rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 1em $secondaryColor;
+}
+
+.card-img-overlay {
+  display: grid;
+  align-items: end;
+}
+
+.card-img {
+  opacity: 0.5;
+}
+
+.card-content {
+  background-color: rgba(0, 0, 0, 0.1);
+  box-shadow: none !important;
+}
+
+.card-title {
+  font-size: 20px;
+  color: $whiteColor;
+  margin: 0;
+  padding: 4px;
+  text-align: center;
+}
+
+

@@ -1,0 +1,75 @@
+@import "../../../assets/styles/custom-styles";
+
+.first-page {
+  background-image: url("../../../assets/background-welcome.JPG");
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  @media (min-width: 576px) {
+    justify-content: right;
+  }
+}
+
+:host {
+  color: $whiteColor;
+}
+
+.text {
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 100px;
+  opacity: 0.8;
+  @media (min-width: 576px) {
+    right: 0;
+    padding-right: 40px;
+  }
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  @media (min-width: 576px) {
+    justify-content: flex-end;
+  }
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.separator {
+  border: 0;
+}
+
+.separator--line {
+  border-bottom: 3px solid $whiteColor;
+  width: 0;
+  animation: separator-width 3s ease-out forwards;
+}
+
+@keyframes separator-width {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.portfolio-button {
+  color: $whiteColor;
+  border: 1px solid $whiteColor;
+  width: 200px;
+  background-color: rgba(0, 0, 0, 0.1);
+  justify-content: center;
+}
+
+.portfolio-button:hover {
+  background-color: $whiteColor;
+  color: $primaryColor;
+  border: 1px solid $primaryColor;
+}
+
