@@ -25,7 +25,9 @@
             "aot": false,
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/app.js",
+              "src/main.css"
             ],
             "styles": [
               "src/styles.scss"
@@ -124,6 +126,7 @@
           }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "elizamakiej"
 }
