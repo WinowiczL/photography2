@@ -1,5 +1,5 @@
 <div class="card bg-dark text-white">
-  <img [src]="imageSource" class="card-img" [alt]="imageAlt">
+  <img *ngIf="imageSource" [src]="imageSource" class="card-img" [alt]="imageAlt">
   <div class="card-img-overlay">
     <div class="card-content">
       <h5 class="card-title">{{cardTitle}}</h5>
