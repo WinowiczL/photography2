@@ -1,0 +1,13 @@
+.back {
+  cursor: pointer;
+}
+
+hr{
+  margin-bottom: 0;
+}
+
+.down-arrow {
+  @media (max-width: 576px) {
+    margin-top: 50px;
+  }
+}

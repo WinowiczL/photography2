@@ -20,4 +20,8 @@ export class SessionsComponent implements OnInit {
   setSession(selectedDialog) {
     this.selectedDialog = selectedDialog;
   }
+
+  resetSessionType() {
+    this.selectedDialog.sessionType = null;
+  }
 }

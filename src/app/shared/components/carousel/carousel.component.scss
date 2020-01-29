@@ -1,0 +1,23 @@
+@import "../../../../assets/styles/custom-styles";
+
+.photo {
+  height: 350px;
+}
+.carousel {
+  position: static;
+  width: 100%;
+}
+
+.carousel-background{
+  background-color: $primaryColor;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  color: $secondaryColor;
+}
+
+p {
+  color: $secondaryColor;
+}

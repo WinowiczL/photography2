@@ -11,7 +11,6 @@ import { StudioComponent } from './sectors/studio/studio.component';
 import { VoucherComponent } from './sectors/voucher/voucher.component';
 import { ContactComponent } from './sectors/contact/contact.component';
 import { CardComponent } from './sectors/sessions/card/card.component';
-import { CardDetailComponent } from './sectors/sessions/card-detail/card-detail.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { FooterComponent } from './sectors/footer/footer.component';
 import {RouterModule} from '@angular/router';
@@ -22,6 +21,8 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { SessionDescriptionComponent } from './sectors/sessions/session-details/session-description/session-description.component';
 import { SessionPriceComponent } from './sectors/sessions/session-details/session-price/session-price.component';
 import { SessionPrepareComponent } from './sectors/sessions/session-details/session-prepare/session-prepare.component';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { CarouselComponent } from './shared/components/carousel/carousel.component';
 
 @NgModule({
   declarations: [
@@ -34,13 +35,13 @@ import { SessionPrepareComponent } from './sectors/sessions/session-details/sess
     VoucherComponent,
     ContactComponent,
     CardComponent,
-    CardDetailComponent,
     FooterComponent,
     CardsComponent,
     SessionDetailsComponent,
     SessionDescriptionComponent,
     SessionPriceComponent,
     SessionPrepareComponent,
+    CarouselComponent,
   ],
   imports: [
     BrowserModule,
@@ -52,6 +53,7 @@ import { SessionPrepareComponent } from './sectors/sessions/session-details/sess
       scrollPositionRestoration: 'enabled'
     }),
     FormsModule,
+    CarouselModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]

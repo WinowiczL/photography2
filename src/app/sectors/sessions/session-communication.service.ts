@@ -5,8 +5,12 @@ export enum DialogOption {
 }
 
 export interface SelectedDialog {
-  sessionType?: 'noworodkowa' | 'dziecięca' | 'ciążowa' | 'rodzinna' | 'portretowa' | 'ślubna';
+  sessionType?: 'noworodkowa' | 'dziecięca' | 'ciążowa' | 'rodzinna' | 'portretowa' | 'ślubna' | SessionType;
   dialogOption?: 'OPIS' | 'CENNIK' | 'PRZYGOTOWANIE';
+}
+
+export enum SessionType {
+  NOWORODKOWA = 'noworodkowa', DZIECIECA = 'dziecięca', CIAZOWA = 'ciążowa', RODZINNA = 'rodzinna', PORTRETOWA = 'portretowa', SLUBNA = 'ślubna'
 }
 
 @Injectable({

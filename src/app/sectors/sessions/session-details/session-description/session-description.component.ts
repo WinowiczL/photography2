@@ -1,18 +1,20 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, Input} from '@angular/core';
+import {Details} from '../session-details.component';
+import {Carousel} from '../../../../shared/components/carousel/carousel.component';
 
 @Component({
   selector: 'app-session-description',
   templateUrl: './session-description.component.html',
   styleUrls: ['./session-description.component.scss']
 })
-export class SessionDescriptionComponent implements OnInit {
+export class SessionDescriptionComponent {
 
   @Input()
   sessionType;
 
-  constructor() { }
+  @Input()
+  details: Details;
 
-  ngOnInit() {
-  }
-
+  @Input()
+  carouselOptions: Carousel;
 }

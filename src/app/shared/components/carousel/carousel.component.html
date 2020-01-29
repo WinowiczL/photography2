@@ -1,0 +1,14 @@
+<div class="w-100">
+  <carousel [itemsPerSlide]="itemsPerSlide"
+            [singleSlideOffset]=false
+            [noWrap]="noWrap"
+            [interval]="2000"
+            [startFromIndex]="0"
+            (slideRangeChange)="onSlideRangeChange($event)"
+            [showIndicators]=false>
+    <slide *ngFor="let slide of carouselOptions.slides; let index=index " class="mx-auto">
+      <img [src]="slide.image" alt="image slide" class="photo" style="display: block; width: 100%;">
+    </slide>
+  </carousel>
+</div>
+

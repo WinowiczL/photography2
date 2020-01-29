@@ -1,11 +1,12 @@
 <div class="second-background" id="sesje">
   <div class="title basic-color">{{selectedDialog.sessionType ? 'Sesja ' + selectedDialog.sessionType : "Wybierz interesującą cię sesje"}}</div>
   <div class="container">
-    <hr class="separator-line-basic"/>
+    <div *ngIf="selectedDialog.sessionType" (click)="resetSessionType()" class="basic-color back">cofnij do wyboru sesji</div>
+    <hr *ngIf="!selectedDialog.sessionType" class="separator-line-basic"/>
     <div *ngIf="!selectedDialog.sessionType">
       <app-cards (sessionClick)="setSession($event)"></app-cards>
     </div>
-    <div *ngIf="selectedDialog.sessionType">
+    <div *ngIf="selectedDialog.sessionType" class="cd">
       <app-session-details [sessionType]="selectedDialog.sessionType"></app-session-details>
     </div>
   </div>
