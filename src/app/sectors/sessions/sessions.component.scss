@@ -2,7 +2,7 @@
   cursor: pointer;
 }
 
-hr{
+hr {
   margin-bottom: 0;
 }
 
@@ -10,4 +10,9 @@ hr{
   @media (max-width: 576px) {
     margin-top: 50px;
   }
+}
+
+.second-background {
+  min-height: 100vh;
+  height: fit-content;
 }
