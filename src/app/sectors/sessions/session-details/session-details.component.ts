@@ -32,15 +32,15 @@ export class SessionDetailsComponent implements OnInit {
       };
       this.carouselOptions = {
         slides: [
-          {image: '../assets/noworodkowa/1.jpg'},
-          {image: '../assets/noworodkowa/2.jpg'},
-          {image: '../assets/noworodkowa/3.jpg'},
-          {image: '../assets/noworodkowa/4.jpg'},
-          {image: '../assets/noworodkowa/5.jpg'},
-          {image: '../assets/noworodkowa/6.jpg'},
-          {image: '../assets/noworodkowa/7.jpg'},
-          {image: '../assets/noworodkowa/8.jpg'},
-          {image: '../assets/noworodkowa/9.jpg'},
+          {image: './assets/noworodkowa/1.jpg'},
+          {image: './assets/noworodkowa/2.jpg'},
+          {image: './assets/noworodkowa/3.jpg'},
+          {image: './assets/noworodkowa/4.jpg'},
+          {image: './assets/noworodkowa/5.jpg'},
+          {image: './assets/noworodkowa/6.jpg'},
+          {image: './assets/noworodkowa/7.jpg'},
+          {image: './assets/noworodkowa/8.jpg'},
+          {image: './assets/noworodkowa/9.jpg'},
         ],
         itemsPerSlide: 4
       };

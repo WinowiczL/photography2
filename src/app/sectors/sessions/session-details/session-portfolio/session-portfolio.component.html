@@ -8,8 +8,8 @@
   <div class="column">
     <img [src]="sliced" *ngFor="let sliced of slicedImages.slice(6,9)">
   </div>
-  <img *ngIf="page > 1" src="../assets/back.svg" class="left-arrow" (click)="leftClick()">
-  <img *ngIf="page < 3" src="../assets/next.svg" class="right-arrow" (click)="rightClick()">
+  <img *ngIf="page > 1" src="./assets/back.svg" class="left-arrow" (click)="leftClick()">
+  <img *ngIf="page < 3" src="./assets/next.svg" class="right-arrow" (click)="rightClick()">
 </div>
 
 
