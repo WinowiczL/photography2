@@ -26,8 +26,6 @@ export class SessionDetailsComponent implements OnInit {
   }
 
   private setDetails() {
-    console.log(this.sessionType);
-    console.log(this.sessionType === SessionType.NOWORODKOWA);
     if (this.sessionType === SessionType.NOWORODKOWA) {
       this.details = {
         description: 'Pierwsze tygodnie, gdy na świat przychodzi dziecko są dla rodziny szczególnie wyjątkowe. Uwielbiam obserwować, jak podczas sesji wpatrujecie się w nowego członka Waszej rodziny. Przyglądacie się tym małym stópkom, rączkom i buzi z ogromną miłością i czułością. Warto zatrzymać w pamięci te wyjątkowe chwile, bo z tygodnia na tydzień maleństwo będzie rosnąć i stale się zmieniać. Sesja noworodkowa to niepowtarzalna pamiątka dla każdego członka rodziny, dlatego nie pozwólcie sobie go przegapić.'
