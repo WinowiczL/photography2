@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-navigation',
@@ -9,7 +9,12 @@ export class NavigationComponent implements OnInit {
 
   isCollapsed = true;
 
-  constructor() { }
+  onEvent(event) {
+    event.stopPropagation();
+  }
+
+  constructor() {
+  }
 
   ngOnInit() {
   }

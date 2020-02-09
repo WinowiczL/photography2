@@ -2,31 +2,31 @@
 
 :host ::ng-deep .tabset1 a.nav-link {
   color: $primaryColor;
-  border-bottom: 2px solid $primaryColor;
-  border-top: 2px solid $primaryColor;
-  border-left: 2px solid $primaryColor;
   border-radius: 0;
+  border-width: 2px;
+  border-bottom-color: $primaryColor;
+
 
 }
 
-:host ::ng-deep .tabset1 #last {
-  border-right: 2px solid $primaryColor;
-}
-
-:host ::ng-deep .tabset1 #third {
-  @media (max-width: 576px) {
-    border-right: 2px solid $primaryColor;
-  }
-}
+//:host ::ng-deep .tabset1 #last {
+//  border-right: 2px solid $primaryColor;
+//}
+//
+//:host ::ng-deep .tabset1 #third {
+//  @media (max-width: 576px) {
+//    border-right: 2px solid $primaryColor;
+//  }
+//}
 
 
 :host ::ng-deep .tabset1 a.nav-link.active {
-  border-right: 2px solid $primaryColor;
-  border-left: 2px solid $primaryColor;
-  border-bottom: 2px solid $primaryColor;
-  border-top: 2px solid $primaryColor;
-  background-color: $primaryColor;
-  color: white;
+  border-width: 2px;
+  color: $primaryColor;
   font-weight: bold;
+  border-top-color: $primaryColor;
+  border-left-color: $primaryColor;
+  border-right-color: $primaryColor;
+  border-bottom-color: $whiteColor;
   border-radius: 0;
 }

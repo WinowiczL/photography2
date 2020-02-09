@@ -1,16 +1,9 @@
-<div class="row">
-  <div class="column">
-    <img [src]="sliced" *ngFor="let sliced of slicedImages.slice(0,3)">
-  </div>
-  <div class="column">
-    <img [src]="sliced" *ngFor="let sliced of slicedImages.slice(3,6)">
-  </div>
-  <div class="column">
-    <img [src]="sliced" *ngFor="let sliced of slicedImages.slice(6,9)">
-  </div>
-  <img *ngIf="page > 1" src="./assets/back.svg" class="left-arrow" (click)="leftClick()">
-  <img *ngIf="page < 3" src="./assets/next.svg" class="right-arrow" (click)="rightClick()">
+<div class="mt-4">
+  <carousel [interval]="myInterval" [(activeSlide)]="activeSlideIndex">
+    <slide *ngFor="let slide of slides; let index=index">
+      <div class="d-flex align-items-center justify-content-center">
+        <img [src]="slide.image" alt="image slide" class="image img-fluid">
+      </div>
+    </slide>
+  </carousel>
 </div>
-
-
-

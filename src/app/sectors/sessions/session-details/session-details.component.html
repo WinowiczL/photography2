@@ -4,6 +4,11 @@
       <app-session-description [carouselOptions]="carouselOptions" [sessionType]="sessionType" [details]="details"></app-session-description>
     </ng-template>
   </ngb-tab>
+  <ngb-tab title="Portfolio" id="last">
+    <ng-template ngbTabContent>
+      <app-session-portfolio [sessionType]="sessionType"></app-session-portfolio>
+    </ng-template>
+  </ngb-tab>
   <ngb-tab title="Cennik">
     <ng-template ngbTabContent>
       <app-session-price></app-session-price>
@@ -11,12 +16,7 @@
   </ngb-tab>
   <ngb-tab title="Przygotowanie" id="third">
     <ng-template ngbTabContent>
-     <app-session-prepare></app-session-prepare>
-    </ng-template>
-  </ngb-tab>
-  <ngb-tab title="Portfolio" id="last">
-    <ng-template ngbTabContent>
-      <app-session-portfolio [sessionType]="sessionType"></app-session-portfolio>
+      <app-session-prepare></app-session-prepare>
     </ng-template>
   </ngb-tab>
 </ngb-tabset>

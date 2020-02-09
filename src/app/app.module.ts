@@ -23,7 +23,7 @@ import { SessionPriceComponent } from './sectors/sessions/session-details/sessio
 import { SessionPrepareComponent } from './sectors/sessions/session-details/session-prepare/session-prepare.component';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { CarouselComponent } from './shared/components/carousel/carousel.component';
-import { SessionPortfolioComponent } from './sectors/sessions/session-details/session-portfolio/session-portfolio.component';
+import {SessionPortfolioComponent} from './sectors/sessions/session-details/session-portfolio/session-portfolio.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +43,7 @@ import { SessionPortfolioComponent } from './sectors/sessions/session-details/se
     SessionPriceComponent,
     SessionPrepareComponent,
     CarouselComponent,
-    SessionPortfolioComponent,
+    SessionPortfolioComponent
   ],
   imports: [
     BrowserModule,
