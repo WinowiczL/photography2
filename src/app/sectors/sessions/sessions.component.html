@@ -2,7 +2,7 @@
   <div class="title basic-color">{{selectedDialog.sessionType ? 'Sesja ' + selectedDialog.sessionType : "Wybierz interesującą cię sesje"}}</div>
   <div class="container">
     <div *ngIf="selectedDialog.sessionType" (click)="resetSessionType()" class="basic-color back">cofnij do wyboru sesji</div>
-    <hr *ngIf="!selectedDialog.sessionType" class="separator-line-basic"/>
+    <hr *ngIf="!selectedDialog.sessionType" class="separator-line-basic mb-2 mb-lg-5"/>
     <div *ngIf="!selectedDialog.sessionType">
       <app-cards (sessionClick)="setSession($event)"></app-cards>
     </div>

@@ -1,41 +1,4 @@
 @import "../../../../assets/styles/custom-styles";
-//
-//:host ::ng-deep .tabset1 a.nav-link {
-//  color: $primaryColor;
-//  border-radius: 0;
-//  border-width: 2px;
-//  border-bottom-color: $primaryColor;
-//  white-space: nowrap;
-//
-//
-//}
-//
-////:host ::ng-deep .tabset1 #last {
-////  border-right: 2px solid $primaryColor;
-////}
-////
-////:host ::ng-deep .tabset1 #third {
-////  @media (max-width: 576px) {
-////    border-right: 2px solid $primaryColor;
-////  }
-////}
-//
-//
-//:host ::ng-deep .tabset1 a.nav-link.active {
-//  border-width: 2px;
-//  color: $primaryColor;
-//  font-weight: bold;
-//  border-top-color: $primaryColor;
-//  border-left-color: $primaryColor;
-//  border-right-color: $primaryColor;
-//  border-bottom-color: $whiteColor;
-//  border-radius: 0;
-//}
-
-/* colors */
-$blue: #428BFF;
-$red: #FF4A53;
-$dark: #333;
 
 $accent: $primaryColor;
 $accent-inactive: desaturate($accent, 85%);
@@ -80,16 +43,19 @@ $content-selector: "~ .content > section";
     }
   }
 }
+
 .tabs {
   left: 50%;
   transform: translateX(-50%);
   position: relative;
   background: white;
-  padding: 50px 0;
+  padding-top: 20px;
+  padding-bottom: 50px;
   width: 100%;
   height: 100%;
   border-radius: 5px;
   min-width: #{$tab-count * 60px};
+
   input[name="tab-control"] {
     display: none;
   }
@@ -147,6 +113,7 @@ $content-selector: "~ .content > section";
         &:active {
           outline: 0;
           color: lighten($secondary, 15%);
+
           svg {
             fill: lighten($secondary, 15%);
           }
@@ -159,6 +126,7 @@ $content-selector: "~ .content > section";
     position: relative;
     width: #{100%/$tab-count};
     transition: all 0.33s cubic-bezier(0.38, 0.8, 0.32, 1.07);
+
     .indicator {
       position: relative;
       width: $indicator-width;
@@ -188,6 +156,7 @@ $content-selector: "~ .content > section";
       h2 {
         color: $accent;
         display: none;
+
         &::after {
           content: "";
           position: relative;
@@ -260,6 +229,7 @@ $content-selector: "~ .content > section";
 
     .content {
       margin-top: 20px;
+
       section h2 {
         display: block;
       }
