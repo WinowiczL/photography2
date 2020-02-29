@@ -2,8 +2,8 @@
   <div class="title second-color">Spraw bliskim prezent!</div>
   <div class="container">
     <hr class="separator-line-second"/>
-    <div class="row justify-content-center">
-      <div class="col-lg-7 col-sm-12">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-sm-12 d-flex justify-content-center py-5">
         <div class="flip-card">
           <div class="flip-card-inner">
             <div class="flip-card-front">
@@ -15,7 +15,7 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-5 col-sm-12">
+      <div class="col-sm-12 py-5">
         <div class="content">
           <h5 class="second-color d-flex align-items-center justify-content-center text-center text">
             Podarowanie bliskiej osobie profesjonalnej sesji fotograficznej to najlepszy pomysł na prezent, który nigdy
@@ -25,16 +25,17 @@
             biorącej w niej udział.
           </h5>
         </div>
-
-        <button type="button" class="btn portfolio-button" routerLink="/kontakt">
-          Kup bon upominkowy
-        </button>
-
+        <div class="d-flex justify-content-center">
+          <button type="button" class="btn portfolio-button"
+                  onClick="document.getElementById('kontakt').scrollIntoView({ behavior: 'smooth'});">
+            Kup bon upominkowy
+          </button>
+        </div>
       </div>
     </div>
   </div>
-  <div class="row arrow-content">
+  <div class="row arrow-content d-none d-lg-flex">
     <img src="./assets/white-down-arrow.svg" class="down-arrow"
-         onClick="document.getElementById('kontakt').scrollIntoView({ behavior: 'smooth', block: 'center' });"/>
+         onClick="document.getElementById('kontakt').scrollIntoView({ behavior: 'smooth'});"/>
   </div>
 </div>

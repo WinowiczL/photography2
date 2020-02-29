@@ -1,18 +1,33 @@
 <div class="first-page">
+
+  <input type="checkbox" id="overlay-input" class="d-lg-none" (change)="changeNavChecked()" [checked]="isNavChecked"/>
+  <label for="overlay-input" id="overlay-button" class="d-lg-none" [ngStyle]="{'position': isNavChecked ? 'fixed' : 'absolute'}"><span></span></label>
+  <div id="overlay">
+    <ul>
+      <li><a (click)="goToView('sesje')">Portfolio</a></li>
+      <li><a (click)="goToView('studio')">Studio</a></li>
+      <li><a (click)="goToView('sesje')">Oferta</a></li>
+      <li><a (click)="goToView('sesje')">Przed sesją</a></li>
+      <li><a (click)="goToView('o_mnie')">O mnie</a></li>
+      <li><a (click)="goToView('kontakt')">Kontakt</a></li>
+    </ul>
+  </div>
+
+
   <div class="text">
     <h1>Profesjonalne sesje zdjęciowe</h1>
     <hr class="separator separator--line"/>
     <p>Fotografia rodzinna, ciążowa i noworodkowa</p>
     <div class="button-container">
       <button type="button" class="btn portfolio-button"
-              onClick="document.getElementById('sesje').scrollIntoView({ behavior: 'smooth', block: 'center' });">
+              onClick="document.getElementById('sesje').scrollIntoView({ behavior: 'smooth'});">
         Sprawdź portfolio
       </button>
     </div>
   </div>
 
-  <div class="row arrow-content">
+  <div class="row arrow-content d-none d-lg-flex">
     <img src="./assets/white-down-arrow.svg" class="down-arrow"
-         onClick="document.getElementById('sesje').scrollIntoView({ behavior: 'smooth', block: 'center' });"/>
+         onClick="document.getElementById('sesje').scrollIntoView({ behavior: 'smooth'});"/>
   </div>
 </div>
