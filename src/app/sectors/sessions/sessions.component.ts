@@ -18,6 +18,7 @@ export class SessionsComponent implements OnInit {
   }
 
   setSession(selectedDialog) {
+    document.getElementById('sesje').scrollIntoView({ behavior: 'smooth'});
     this.selectedDialog = selectedDialog;
   }
 

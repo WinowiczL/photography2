@@ -6,7 +6,7 @@ $secondary: $accent-inactive;
 
 
 /* tab setting */
-$tab-count: 5;
+$tab-count: 4;
 $indicator-width: 50px;
 $indicator-height: 4px;
 
@@ -104,7 +104,6 @@ $content-selector: "~ .content > section";
           fill: $secondary;
           height: 1.2em;
           vertical-align: bottom;
-          margin-right: 0.2em;
           transition: all 0.2s ease-in-out;
         }
 

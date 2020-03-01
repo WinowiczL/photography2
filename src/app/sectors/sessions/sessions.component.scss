@@ -1,5 +1,31 @@
+@import "../../../assets/styles/custom-styles";
+
+$accent: $primaryColor;
+$accent-inactive: desaturate($accent, 85%);
+
 .back {
   cursor: pointer;
+  position: absolute;
+  color: $accent-inactive;
+  margin-top: -40px;
+  left: 20px;
+  @media (min-width: 576px) {
+    margin-top: 20px;
+  }
+
+  &:hover {
+    color: $primaryColor;
+
+    svg {
+      fill: $primaryColor
+    }
+  }
+
+  svg {
+    fill: $accent-inactive;
+  }
+
+
 }
 
 hr {
@@ -15,4 +41,8 @@ hr {
 .second-background {
   min-height: 100vh;
   height: fit-content;
+}
+
+.back-icon {
+  height: 20px;
 }

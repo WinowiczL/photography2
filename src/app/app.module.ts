@@ -24,7 +24,6 @@ import { SessionPrepareComponent } from './sectors/sessions/session-details/sess
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { CarouselComponent } from './shared/components/carousel/carousel.component';
 import {SessionPortfolioComponent} from './sectors/sessions/session-details/session-portfolio/session-portfolio.component';
-import { SessionPriceWroclawComponent } from './sectors/sessions/session-details/session-price-wroclaw/session-price-wroclaw.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +44,6 @@ import { SessionPriceWroclawComponent } from './sectors/sessions/session-details
     SessionPrepareComponent,
     CarouselComponent,
     SessionPortfolioComponent,
-    SessionPriceWroclawComponent
   ],
   imports: [
     BrowserModule,

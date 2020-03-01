@@ -17,6 +17,12 @@
                  id="name"
                  placeholder="Imie i nazwisko"
                  formControlName="name">
+          <p
+            *ngIf="!modelForm.get('name').valid && modelForm.get('name').dirty"
+            class="error"
+          >
+            Imię i nazwisko jest wymagane.
+          </p>
         </div>
       </div>
       <div class="form-group row justify-content-center">

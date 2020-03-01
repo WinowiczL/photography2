@@ -54,7 +54,7 @@ $content-selector: "~ .content > section";
   border-radius: 5px;
   min-width: #{$tab-count * 60px};
 
-  input[name="tab-control"] {
+  input[name="tab-control-studio"] {
     display: none;
   }
 
@@ -168,7 +168,7 @@ $content-selector: "~ .content > section";
     }
   }
 
-  input[name="tab-control"] {
+  input[name="tab-control-studio"] {
     @include tabs {
       > label {
         cursor: default;

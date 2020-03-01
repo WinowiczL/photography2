@@ -9,6 +9,7 @@ import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 export class ContactComponent implements OnInit {
 
   modelForm: FormGroup;
+  isFormValid = true;
 
   constructor(private formBuilder: FormBuilder) {
   }
@@ -16,15 +17,16 @@ export class ContactComponent implements OnInit {
   ngOnInit(): void {
     this.modelForm = this.formBuilder.group({
       name: ['', Validators.required],
-      email: ['', Validators.required],
+      email: ['', [Validators.required, Validators.email]],
       telephone: '',
       question: ['', Validators.required],
       studio: ''
-    });
+    }, {updateOn: 'submit'});
   }
 
-  onSubmit(form): void {
-    console.log(form.value);
+  onSubmit(form: FormGroup): void {
+    console.log(form);
+    this.isFormValid = form.valid;
   }
 
 }

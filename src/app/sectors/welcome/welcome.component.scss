@@ -1,13 +1,15 @@
 @import "../../../assets/styles/custom-styles";
 
 .first-page {
-  background-image: url("../../../../src/assets/background.jpg");
+  background-image: url("../../../../src/assets/background-FH.jpg");
   background-size: cover;
   height: 100vh;
   width: 100%;
   display: flex;
   justify-content: center;
   @media (min-width: 576px) {
+    background-image: url("../../../../src/assets/background-FH.jpg");
+    background-size: cover;
     justify-content: right;
   }
 }
@@ -22,8 +24,7 @@
   padding-bottom: 100px;
   opacity: 0.8;
   @media (min-width: 576px) {
-    right: 0;
-    padding-right: 40px;
+    left: 30px;
   }
 }
 
@@ -31,7 +32,7 @@
   display: flex;
   justify-content: center;
   @media (min-width: 576px) {
-    justify-content: flex-end;
+    justify-content: flex-start;
   }
 }
 
@@ -61,7 +62,7 @@ h1 {
 
 .logo {
   position: absolute;
-  top: 80px;
+  top: 0;
   height: 160px;
   margin-left: 4px;
 }
@@ -82,8 +83,23 @@ h1 {
 
 //
 
-@keyframes bugfix { from {padding:0;} to {padding:0;}}
-@-webkit-keyframes bugfix { from {padding:0;} to {padding:0;}}
+@keyframes bugfix {
+  from {
+    padding: 0;
+  }
+  to {
+    padding: 0;
+  }
+}
+
+@-webkit-keyframes bugfix {
+  from {
+    padding: 0;
+  }
+  to {
+    padding: 0;
+  }
+}
 
 #overlay-button {
   position: absolute;
@@ -94,6 +110,7 @@ h1 {
   cursor: pointer;
   user-select: none;
   color: white;
+
   span {
     height: 4px;
     width: 35px;
@@ -102,13 +119,16 @@ h1 {
     position: relative;
     display: block;
     transition: all .2s ease-in-out;
+
     &:before {
       top: -10px;
       visibility: visible;
     }
+
     &:after {
       top: 10px;
     }
+
     &:before, &:after {
       background-color: white;
       height: 4px;
@@ -119,6 +139,7 @@ h1 {
       transition: all .2s ease-in-out;
     }
   }
+
   &:hover span, &:hover span:before, &:hover span:after {
     background-color: white;
   }
@@ -133,14 +154,16 @@ input[type=checkbox]:checked ~ #overlay {
 }
 
 input[type=checkbox]:checked ~ #overlay-button {
-  &:hover span, span{
+  &:hover span, span {
     background: transparent;
   }
+
   span {
     &:before {
       transform: rotate(45deg) translate(7px, 7px);
       opacity: 1;
     }
+
     &:after {
       transform: rotate(-45deg) translate(7px, -7px);
     }
@@ -153,10 +176,12 @@ input[type=checkbox]:checked ~ #overlay-button {
   background: $primaryColor;
   z-index: 2;
   visibility: hidden;
-  position: fixed;
+  position: absolute;
+
   &.active {
     visibility: visible;
   }
+
   ul {
     display: flex;
     justify-content: center;
@@ -166,13 +191,15 @@ input[type=checkbox]:checked ~ #overlay-button {
     height: 100vh;
     padding-left: 0;
     list-style-type: none;
-    margin-top: 40px;
+
     li {
       padding: 1em;
+
       a {
         color: white;
         text-decoration: none;
         font-size: 1.5em;
+
         &:hover {
           color: #333332;
         }
