@@ -1,0 +1,31 @@
+@import "../../../../../assets/styles/custom-styles";
+
+.list {
+  font-size: 20px;
+  padding: 0 140px;
+}
+
+.element {
+  color: $primaryColor;
+  padding: 10px;
+}
+
+.portfolio-button {
+  color: $whiteColor;
+  width: 300px;
+  height: 60px;
+  margin-top: 40px;
+  background-color: $primaryColor;
+}
+
+.portfolio-button:hover {
+  background-color: $whiteColor;
+  color: $primaryColor;
+  border: 1px solid $primaryColor;
+}
+
+.line {
+  height: 4px;
+  margin: 0 300px;
+  background-color: $primaryColor;
+}

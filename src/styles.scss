@@ -3,9 +3,16 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 @import './assets/styles/colors';
 
+/* Webfont: Lato-Regular */@font-face {
+  font-family: 'LatoWebRegular';
+    src: url('./assets/fonts/Lato-Light.ttf');
+    font-style: normal;
+    font-weight: normal;
+}
+
 body {
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'LatoWebRegular', sans-serif;
 }
 
 .basic-background {

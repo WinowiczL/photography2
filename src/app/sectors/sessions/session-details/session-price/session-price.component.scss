@@ -70,6 +70,7 @@ a {
       position: relative;
       overflow: hidden;
       transition: all 0.3s ease-in-out;
+      cursor: pointer;
 
       &:before {
         position: absolute;
@@ -139,4 +140,12 @@ a {
       }
     }
   }
+}
+
+.payment {
+  color: $primaryColor;
+  //border: 1px solid $primaryColor;
+  width: max-content;
+  padding: 20px;
+  margin-left: 20px;
 }
