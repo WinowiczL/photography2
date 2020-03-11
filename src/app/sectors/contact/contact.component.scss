@@ -13,16 +13,13 @@
   }
 }
 
-.container {
-  margin-top: 50px;
-}
-
 hr {
   margin-bottom: 50px;
 }
 
 .information {
   color: $primaryColor;
+  font-size: 20px;
   margin-bottom: 50px;
 }
 
@@ -32,13 +29,13 @@ label, legend{
 }
 
 .btn {
-  border: 1px solid $primaryColor;
+  border: 1px solid $thirdColor;
   width: 200px;
-  background: $whiteColor;
-  color: $primaryColor;
+  background: $thirdColor;
+  color: $whiteColor;
   &:hover {
-    background: $primaryColor;
-    color: $whiteColor;
+    background: $whiteColor;
+    color: $thirdColor;
   }
 }
 
@@ -51,5 +48,10 @@ label, legend{
   @media (min-width: 576px) {
     justify-content: flex-end;
   }
+}
+
+textarea {
+  min-height: 120px;
+  max-height: 120px;
 }
 

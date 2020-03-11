@@ -11,7 +11,7 @@
 
     .card-title {
       box-shadow: none !important;
-      background-color: $primaryColor;
+      background-color: $thirdColor;
       border: 1px solid $whiteColor;
     }
   }
@@ -20,7 +20,7 @@
 .card {
   max-height: 300px;
   max-width: 400px;
-  border: 1px solid $primaryColor;
+  border: 1px solid $thirdColor;
   background-color: rgba(0, 0, 0, 0.1);
   box-shadow: 0 0 1em $secondaryColor;
 }
