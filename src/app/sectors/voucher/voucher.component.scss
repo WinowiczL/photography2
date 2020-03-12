@@ -1,17 +1,21 @@
 @import "../../../assets/styles/custom-styles";
 
+.basic-background {
+  height: 100%;
+}
 .portfolio-button {
-  color: $thirdColor;
+  color: $primaryColor;
   border: 1px solid $thirdColor;
   width: 300px;
   height: 60px;
-  margin-top: 40px;
+  margin: 40px 0;
   background-color: $whiteColor;
 }
 
 .portfolio-button:hover {
-  background-color: $thirdColor;
-  color: $whiteColor;
+  box-shadow: 5px 10px 18px $primaryColor;
+  background-color: $whiteColor;
+  color: $primaryColor;
   border: 1px solid $whiteColor;
 }
 
@@ -70,11 +74,23 @@
 }
 
 .voucher-text {
-  padding: 30px 200px;
+  @media (min-width: 1000px) {
+    padding: 60px 200px;
+  }
   color: #838383;
-  font-size: 30px;
+  font-size: 20px;
   max-height: max-content;
   background-color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+
+}
+
+.txt {
+  display: inline;
+  background: white;
+  padding: 5px 10px;
+  margin: 5px;
+  line-height: 2.2em;
 }
 
 .inside {
@@ -86,5 +102,8 @@ h5 {
   line-height: 1.6;
 }
 
+.important-txt {
+  font-weight: bold;
+}
 
 
