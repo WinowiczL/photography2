@@ -93,7 +93,6 @@ $content-selector: "~ .content > section";
         text-overflow: ellipsis;
         display: block;
         cursor: pointer;
-        transition: all 0.2s ease-in-out;
         -webkit-touch-callout: none;
 
         br {
@@ -162,7 +161,7 @@ $content-selector: "~ .content > section";
           display: block;
           width: 30px;
           height: 3px;
-          background: $accent;
+          background: $thirdColor;
           margin-top: 5px;
           left: 1px;
         }

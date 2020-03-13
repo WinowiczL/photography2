@@ -6,7 +6,7 @@ import {Component, Input} from '@angular/core';
   styleUrls: ['./session-portfolio.component.scss']
 })
 export class SessionPortfolioComponent {
-  myInterval = 1500;
+  myInterval = 3000;
   activeSlideIndex = 0;
 
   @Input()

@@ -1,7 +1,9 @@
 @import "../../../../../assets/styles/custom-styles";
 
 .txt {
-  margin-top: 150px;
+  @media (min-width: 1000px) {
+    margin-top: 150px;
+  }
   color: $primaryColor;
   display: flex;
   align-items: center;
@@ -9,8 +11,11 @@
 }
 
 .photo {
-  width: 800px;
-  height: 400px;
+  @media (min-width: 1000px) {
+    width: 800px;
+    height: 400px;
+  }
+
 }
 
 .opis {

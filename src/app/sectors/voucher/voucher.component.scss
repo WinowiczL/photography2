@@ -77,10 +77,10 @@
   @media (min-width: 1000px) {
     padding: 60px 200px;
   }
-  color: #838383;
-  font-size: 20px;
+  color: $primaryColor;
+  font-size: 24px;
   max-height: max-content;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgb(252, 234, 232);
   text-align: center;
 
 }

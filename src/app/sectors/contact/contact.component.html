@@ -8,77 +8,185 @@
       serdecznie zapraszam do kontaktu.<br/>Z chęcią udzielę na nie odpowiedzi i rozwieje wszystkie Twoje wątpliwości.
     </div>
     <hr class="separator-line-basic"/>
-    <form [formGroup]="modelForm" (ngSubmit)="onSubmit(modelForm)">
-      <div class="form-group row justify-content-center">
-        <label for="name" class="col-sm-2 col-form-label">Imie i nazwisko</label>
-        <div class="col-sm-6">
-          <input type="text"
-                 class="form-control"
-                 id="name"
-                 placeholder="Imie i nazwisko"
-                 formControlName="name">
-          <p
-            *ngIf="!modelForm.get('name').valid && modelForm.get('name').dirty"
-            class="error"
-          >
-            Imię i nazwisko jest wymagane.
-          </p>
+
+    <div class="row w-100 justify-content-center align-items-center" style="margin-top: 100px">
+
+      <div class="col-3 p-0  column">
+        <div class="d-flex justify-content-center svg-container">
+          <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+               xmlns:xlink="http://www.w3.org/1999/xlink"
+               x="0px" y="0px"
+               width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+<g>
+	<path fill="#231F20" d="M48,0H16c-2.211,0-4,1.789-4,4v56c0,2.211,1.789,4,4,4h32c2.211,0,4-1.789,4-4V4C52,1.789,50.211,0,48,0z
+		 M50,60c0,1.104-0.896,2-2,2H16c-1.104,0-2-0.896-2-2v-8h36V60z M50,50H14V10h36V50z M50,8H14V4c0-1.104,0.896-2,2-2h32
+		c1.104,0,2,0.896,2,2V8z"/>
+  <path fill="#231F20" d="M32,60c1.658,0,3-1.342,3-3s-1.342-3-3-3s-3,1.342-3,3S30.342,60,32,60z M32,56c0.553,0,1,0.447,1,1
+		s-0.447,1-1,1s-1-0.447-1-1S31.447,56,32,56z"/>
+  <path fill="#231F20" d="M33,4h-6c-0.553,0-1,0.447-1,1s0.447,1,1,1h6c0.553,0,1-0.447,1-1S33.553,4,33,4z"/>
+  <circle fill="#231F20" cx="37" cy="5" r="1"/>
+</g>
+        </svg>
+        </div>
+        <div class="d-flex justify-content-center">
+          <a href="tel:+48791830546" class="phone">791 830 546</a>
         </div>
       </div>
-      <div class="form-group row justify-content-center">
-        <label for="email" class="col-sm-2 col-form-label">Email</label>
-        <div class="col-sm-6">
-          <input type="email"
-                 class="form-control"
-                 id="email"
-                 placeholder="Email"
-                 formControlName="email">
-        </div>
+
+      <div class="col-1">
+        <div class="off-column"></div>
       </div>
-      <div class="form-group row justify-content-center">
-        <label for="telephone" class="col-sm-2 col-form-label">Nr telefonu<span> (opcjonalne)</span></label>
-        <div class="col-sm-6">
-          <input type="text"
-                 class="form-control"
-                 id="telephone"
-                 placeholder="Nr telefonu"
-                 formControlName="telephone"
-          >
+
+
+      <div class="col-3 p-0 column">
+        <div class="d-flex justify-content-center svg-container">
+          <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+               xmlns:xlink="http://www.w3.org/1999/xlink"
+               x="0px" y="0px"
+               width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+<g>
+	<path fill="#231F20" d="M60,20H48V4c0-2.211-1.789-4-4-4H20c-2.211,0-4,1.789-4,4v6H4c-2.211,0-4,1.789-4,4v46c0,2.211,1.789,4,4,4
+		h56c2.211,0,4-1.789,4-4V24C64,21.789,62.211,20,60,20z M16,62H4c-1.104,0-2-0.896-2-2V14c0-1.104,0.896-2,2-2h12V62z M35,62.002
+		h-6V54h6V62.002z M46,62l-0.001,0.002H37V53c0-0.553-0.447-1-1-1h-8c-0.553,0-1,0.447-1,1v9.002h-8.999L18,62V4
+		c0-1.104,0.896-2,2-2h24c1.104,0,2,0.896,2,2V62z M62,60c0,1.104-0.896,2-2,2H48V22h12c1.104,0,2,0.896,2,2V60z"/>
+  <path fill="#231F20" d="M7,24h4c0.553,0,1-0.447,1-1v-4c0-0.553-0.447-1-1-1H7c-0.553,0-1,0.447-1,1v4C6,23.553,6.447,24,7,24z
+		 M8,20h2v2H8V20z"/>
+  <path fill="#231F20" d="M7,34h4c0.553,0,1-0.447,1-1v-4c0-0.553-0.447-1-1-1H7c-0.553,0-1,0.447-1,1v4C6,33.553,6.447,34,7,34z
+		 M8,30h2v2H8V30z"/>
+  <path fill="#231F20" d="M7,44h4c0.553,0,1-0.447,1-1v-4c0-0.553-0.447-1-1-1H7c-0.553,0-1,0.447-1,1v4C6,43.553,6.447,44,7,44z
+		 M8,40h2v2H8V40z"/>
+  <path fill="#231F20" d="M29,18h-4c-0.553,0-1,0.447-1,1v4c0,0.553,0.447,1,1,1h4c0.553,0,1-0.447,1-1v-4C30,18.447,29.553,18,29,18
+		z M28,22h-2v-2h2V22z"/>
+  <path fill="#231F20" d="M29,28h-4c-0.553,0-1,0.447-1,1v4c0,0.553,0.447,1,1,1h4c0.553,0,1-0.447,1-1v-4C30,28.447,29.553,28,29,28
+		z M28,32h-2v-2h2V32z"/>
+  <path fill="#231F20" d="M29,38h-4c-0.553,0-1,0.447-1,1v4c0,0.553,0.447,1,1,1h4c0.553,0,1-0.447,1-1v-4C30,38.447,29.553,38,29,38
+		z M28,42h-2v-2h2V42z"/>
+  <path fill="#231F20" d="M39,18h-4c-0.553,0-1,0.447-1,1v4c0,0.553,0.447,1,1,1h4c0.553,0,1-0.447,1-1v-4C40,18.447,39.553,18,39,18
+		z M38,22h-2v-2h2V22z"/>
+  <path fill="#231F20" d="M29,8h-4c-0.553,0-1,0.447-1,1v4c0,0.553,0.447,1,1,1h4c0.553,0,1-0.447,1-1V9C30,8.447,29.553,8,29,8z
+		 M28,12h-2v-2h2V12z"/>
+  <path fill="#231F20" d="M39,8h-4c-0.553,0-1,0.447-1,1v4c0,0.553,0.447,1,1,1h4c0.553,0,1-0.447,1-1V9C40,8.447,39.553,8,39,8z
+		 M38,12h-2v-2h2V12z"/>
+  <path fill="#231F20" d="M39,28h-4c-0.553,0-1,0.447-1,1v4c0,0.553,0.447,1,1,1h4c0.553,0,1-0.447,1-1v-4C40,28.447,39.553,28,39,28
+		z M38,32h-2v-2h2V32z"/>
+  <path fill="#231F20" d="M39,38h-4c-0.553,0-1,0.447-1,1v4c0,0.553,0.447,1,1,1h4c0.553,0,1-0.447,1-1v-4C40,38.447,39.553,38,39,38
+		z M38,42h-2v-2h2V42z"/>
+  <path fill="#231F20" d="M57,28h-4c-0.553,0-1,0.447-1,1v4c0,0.553,0.447,1,1,1h4c0.553,0,1-0.447,1-1v-4C58,28.447,57.553,28,57,28
+		z M56,32h-2v-2h2V32z"/>
+  <path fill="#231F20" d="M57,38h-4c-0.553,0-1,0.447-1,1v4c0,0.553,0.447,1,1,1h4c0.553,0,1-0.447,1-1v-4C58,38.447,57.553,38,57,38
+		z M56,42h-2v-2h2V42z"/>
+  <path fill="#231F20" d="M57,48h-4c-0.553,0-1,0.447-1,1v4c0,0.553,0.447,1,1,1h4c0.553,0,1-0.447,1-1v-4C58,48.447,57.553,48,57,48
+		z M56,52h-2v-2h2V52z"/>
+  <path fill="#231F20" d="M7,54h4c0.553,0,1-0.447,1-1v-4c0-0.553-0.447-1-1-1H7c-0.553,0-1,0.447-1,1v4C6,53.553,6.447,54,7,54z
+		 M8,50h2v2H8V50z"/>
+</g>
+</svg>
         </div>
-      </div>
-      <div class="form-group row justify-content-center">
-        <label for="question" class="col-sm-2 col-form-label">Wiadomość</label>
-        <div class="col-sm-6">
-          <textarea rows="6"
-                    class="form-control"
-                    id="question"
-                    placeholder="Zadaj pytanie"
-                    formControlName="question">
-          </textarea>
-        </div>
-      </div>
-      <fieldset class="form-group">
-        <div class="row justify-content-center">
-          <legend class="col-form-label col-sm-2 pt-0">Studio</legend>
-          <div class="col-sm-6">
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-              <label class="form-check-label" for="gridRadios1">
-                Wrocław
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-              <label class="form-check-label" for="gridRadios2">
-                Tomaszów Bolesławiecki
-              </label>
+        <div class="d-flex justify-content-center">
+          <div class="adres">
+            <div><span class="important-txt">Wrocław</span><br>ul. Sienkiewicz 8a/13</div>
+            <div class="mt-2"><span class="important-txt">Tomaszow Bolesławiecki</span><br>Tomaszow Bolesławiecki 8
             </div>
           </div>
         </div>
-      </fieldset>
-      <div class="row button-container">
-        <button type="submit" class="btn">Wyślij</button>
       </div>
-    </form>
+
+      <div class="col-1">
+        <div class="off-column"></div>
+      </div>
+
+      <div class="col-3 p-0 column">
+        <div class="d-flex justify-content-center svg-container">
+          <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+               xmlns:xlink="http://www.w3.org/1999/xlink"
+               x="0px" y="0px"
+               width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+          <path fill="#231F20" d="M60,8H4c-2.211,0-4,1.789-4,4v40c0,2.211,1.789,4,4,4h56c2.211,0,4-1.789,4-4V12C64,9.789,62.211,8,60,8z
+	 M4,10h56c1.104,0,2,0.896,2,2v2.469L32,36.754L2,14.469V12C2,10.896,2.896,10,4,10z M60,54H4c-1.104,0-2-0.896-2-2v-2.808
+	l18.584-13.381c0.448-0.322,0.55-0.947,0.228-1.396c-0.322-0.447-0.946-0.549-1.396-0.228L2,46.729V16.961l29.403,21.842
+	C31.581,38.935,31.79,39,32,39s0.419-0.065,0.597-0.197L62,16.961v29.768l-17.416-12.54c-0.448-0.322-1.074-0.221-1.396,0.228
+	c-0.322,0.448-0.221,1.073,0.228,1.396L62,49.192V52C62,53.104,61.104,54,60,54z"/>
+          </svg>
+        </div>
+        <div class="d-flex justify-content-center">
+          <a href="mailto:elizamakiej@gmail.com" class="phone">elizamakiej@gmail.com</a>
+        </div>
+      </div>
+
+      <div class="information text-center">Z</div>
+
+
+      <!--    <form [formGroup]="modelForm" (ngSubmit)="onSubmit(modelForm)">-->
+      <!--      <div class="form-group row justify-content-center">-->
+      <!--        <label for="name" class="col-sm-2 col-form-label">Imie i nazwisko</label>-->
+      <!--        <div class="col-sm-6">-->
+      <!--          <input type="text"-->
+      <!--                 class="form-control"-->
+      <!--                 id="name"-->
+      <!--                 placeholder="Imie i nazwisko"-->
+      <!--                 formControlName="name">-->
+      <!--          <p-->
+      <!--            *ngIf="!modelForm.get('name').valid && modelForm.get('name').dirty"-->
+      <!--            class="error"-->
+      <!--          >-->
+      <!--            Imię i nazwisko jest wymagane.-->
+      <!--          </p>-->
+      <!--        </div>-->
+      <!--      </div>-->
+      <!--      <div class="form-group row justify-content-center">-->
+      <!--        <label for="email" class="col-sm-2 col-form-label">Email</label>-->
+      <!--        <div class="col-sm-6">-->
+      <!--          <input type="email"-->
+      <!--                 class="form-control"-->
+      <!--                 id="email"-->
+      <!--                 placeholder="Email"-->
+      <!--                 formControlName="email">-->
+      <!--        </div>-->
+      <!--      </div>-->
+      <!--      <div class="form-group row justify-content-center">-->
+      <!--        <label for="telephone" class="col-sm-2 col-form-label">Nr telefonu<span> (opcjonalne)</span></label>-->
+      <!--        <div class="col-sm-6">-->
+      <!--          <input type="text"-->
+      <!--                 class="form-control"-->
+      <!--                 id="telephone"-->
+      <!--                 placeholder="Nr telefonu"-->
+      <!--                 formControlName="telephone"-->
+      <!--          >-->
+      <!--        </div>-->
+      <!--      </div>-->
+      <!--      <div class="form-group row justify-content-center">-->
+      <!--        <label for="question" class="col-sm-2 col-form-label">Wiadomość</label>-->
+      <!--        <div class="col-sm-6">-->
+      <!--          <textarea rows="6"-->
+      <!--                    class="form-control"-->
+      <!--                    id="question"-->
+      <!--                    placeholder="Zadaj pytanie"-->
+      <!--                    formControlName="question">-->
+      <!--          </textarea>-->
+      <!--        </div>-->
+      <!--      </div>-->
+      <!--      <fieldset class="form-group">-->
+      <!--        <div class="row justify-content-center">-->
+      <!--          <legend class="col-form-label col-sm-2 pt-0">Studio</legend>-->
+      <!--          <div class="col-sm-6">-->
+      <!--            <div class="form-check">-->
+      <!--              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>-->
+      <!--              <label class="form-check-label" for="gridRadios1">-->
+      <!--                Wrocław-->
+      <!--              </label>-->
+      <!--            </div>-->
+      <!--            <div class="form-check">-->
+      <!--              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">-->
+      <!--              <label class="form-check-label" for="gridRadios2">-->
+      <!--                Tomaszów Bolesławiecki-->
+      <!--              </label>-->
+      <!--            </div>-->
+      <!--          </div>-->
+      <!--        </div>-->
+      <!--      </fieldset>-->
+      <!--      <div class="row button-container">-->
+      <!--        <button type="submit" class="btn">Wyślij</button>-->
+      <!--      </div>-->
+      <!--    </form>-->
+    </div>
   </div>
-</div>

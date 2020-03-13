@@ -7,10 +7,12 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  background-position: 21% 50%;
   @media (min-width: 576px) {
     background-image: url("../../../../src/assets/background-FH.jpg");
     background-size: cover;
     justify-content: right;
+    background-position: unset;
   }
 }
 
