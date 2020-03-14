@@ -233,3 +233,21 @@ $content-selector: "~ .content > section";
     }
   }
 }
+
+.basic-background {
+  height: unset;
+}
+
+.studio {
+  @media (max-width: 575px) {
+    background-image: url("../../../assets/STUDIO.jpg");
+  }
+  background-image: url("../../../assets/STUDIO TELEFON.jpg");
+background-repeat: no-repeat;
+  background-size: 50% auto;
+}
+
+.cont {
+
+  padding: 0 40px;
+}
