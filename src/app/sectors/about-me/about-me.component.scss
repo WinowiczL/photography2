@@ -95,3 +95,9 @@
   font-weight: bold;
   color: black;
 }
+
+.about-me-container {
+  @media (min-width: 576px) {
+    margin-top: 60px;
+  }
+}
