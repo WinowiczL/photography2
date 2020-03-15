@@ -8,7 +8,11 @@
 
 .photo{
   height: 100%;
-  position: absolute;
+  width: 100%;
+  @media (min-width: 576px) {
+    position: absolute;
+    width: unset;
+  }
 }
 
 h4 {
