@@ -8,7 +8,7 @@
 
     <!--Opis-->
     <li title="Features"><label for="tab1" role="button" class="d-flex align-items-center justify-content-center">
-      <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+      <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
            x="0px" y="0px"
            width="32px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
 <g>
@@ -29,8 +29,9 @@
 
     <!--Portfolio-->
 
-    <li title="Delivery Contents"><label for="tab2" role="button" class="d-flex align-items-center justify-content-center">
-      <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    <li title="Delivery Contents"><label for="tab2" role="button"
+                                         class="d-flex align-items-center justify-content-center">
+      <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
            x="0px" y="0px"
            width="32px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
 <g>
@@ -54,8 +55,9 @@
       <br><span>Portfolio</span></label></li>
 
     <!--Cennik-->
-    <li title="Delivery Contents"><label for="tab3" role="button" class="d-flex align-items-center justify-content-center">
-      <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    <li title="Delivery Contents"><label for="tab3" role="button"
+                                         class="d-flex align-items-center justify-content-center">
+      <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
            x="0px" y="0px"
            width="32px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
       <g>
@@ -92,8 +94,9 @@
       <br><span>Cennik</span></label></li>
 
     <!--Przygotowanie-->
-    <li title="Delivery Contents"><label for="tab4" role="button" class="d-flex align-items-center justify-content-center">
-      <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    <li title="Delivery Contents"><label for="tab4" role="button"
+                                         class="d-flex align-items-center justify-content-center">
+      <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
            x="0px" y="0px"
            width="32px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
 <g>
@@ -107,7 +110,7 @@
 		s-0.271-1.729-0.271-1.729C41.471,8.015,36.971,6,32,6z"/>
 </g>
 </svg>
-      <br><span>Przygotowanie</span></label></li>
+      <br><span>{{sessionType === "ślubna" ? 'Etapy naszej współpracy' : 'Przygotowanie'}}</span></label></li>
 
 
   </ul>
@@ -117,23 +120,22 @@
   <div class="content">
     <section>
       <h2>Opis</h2>
-            <app-session-description [carouselOptions]="carouselOptions" [sessionType]="sessionType"
-                                     [details]="details"></app-session-description>
+      <app-session-description [details]="details"></app-session-description>
     </section>
 
     <section>
       <h2>Portfolio</h2>
-      <app-session-portfolio [sessionType]="sessionType"></app-session-portfolio>
+      <app-session-portfolio [details]="details"></app-session-portfolio>
     </section>
 
     <section>
       <h2>Cennik</h2>
-      <app-session-price></app-session-price>
+      <app-session-price [price]="details.price"></app-session-price>
     </section>
 
     <section>
-      <h2>Przygotowanie</h2>
-      <app-session-prepare></app-session-prepare>
+      <h2>{{sessionType === "ślubna" ? 'Etapy naszej współpracy' : 'Przygotowanie'}}</h2>
+      <app-session-prepare [details]="details.prepare"></app-session-prepare>
     </section>
   </div>
 </div>

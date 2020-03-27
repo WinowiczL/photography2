@@ -20,7 +20,7 @@ export const carouselImagePath = {
 
 export const sessionTypeImagePath = {
   sesjaNoworodkowa: {
-    imagePath: './assets/sessions/dziecieca.jpg',
+    imagePath: './assets/noworodkowa/IMG_0683.jpg',
     imageAlt: 'sesja noworodkowa'
   },
   sesjaDziecieca: {

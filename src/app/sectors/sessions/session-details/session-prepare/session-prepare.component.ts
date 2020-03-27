@@ -1,15 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input} from '@angular/core';
 
 @Component({
   selector: 'app-session-prepare',
   templateUrl: './session-prepare.component.html',
   styleUrls: ['./session-prepare.component.scss']
 })
-export class SessionPrepareComponent implements OnInit {
+export class SessionPrepareComponent {
 
-  constructor() { }
-
-  ngOnInit() {
-  }
+  @Input()
+  details;
 
 }

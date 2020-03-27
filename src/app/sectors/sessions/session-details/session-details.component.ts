@@ -1,9 +1,41 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {SessionType} from '../session-communication.service';
-import {Carousel} from '../../../shared/components/carousel/carousel.component';
+import {noworodkowa} from './session-text/session-text-noworodkowa';
+import {dziecieca} from './session-text/session-text-dziecieca';
+import {slubna} from './session-text/session-text-slubna';
+import {ciazowa} from './session-text/session-text-ciazowa';
+import {rodzinna} from './session-text/session-text-rodzinna';
+import {portretowa} from './session-text/session-text-portretowa';
 
 export interface Details {
+  type: SessionType;
+  descriptionImage: string;
   description: string;
+  prepare: string[];
+  carouselOptions: CarouselOptions;
+  price: Price;
+}
+
+export interface CarouselOptions {
+  slides: {
+    image: string;
+  }[];
+  itemsPerSlide: number;
+}
+
+export interface Price {
+  mini: {
+    price: number;
+    inPrice: string[];
+  };
+  standard: {
+    price: number;
+    inPrice: string[];
+  };
+  max: {
+    price: number;
+    inPrice: string[];
+  };
 }
 
 @Component({
@@ -18,32 +50,28 @@ export class SessionDetailsComponent implements OnInit {
 
   details: Details;
 
-  carouselOptions: Carousel;
-
-
   ngOnInit() {
     this.setDetails();
   }
 
   private setDetails() {
     if (this.sessionType === SessionType.NOWORODKOWA) {
-      this.details = {
-        description: 'Pierwsze tygodnie, gdy na świat przychodzi dziecko są dla rodziny szczególnie wyjątkowe. Uwielbiam obserwować, jak podczas sesji wpatrujecie się w nowego członka Waszej rodziny. Przyglądacie się tym małym stópkom, rączkom i buzi z ogromną miłością i czułością. Warto zatrzymać w pamięci te wyjątkowe chwile, bo z tygodnia na tydzień maleństwo będzie rosnąć i stale się zmieniać. Sesja noworodkowa to niepowtarzalna pamiątka dla każdego członka rodziny, dlatego nie pozwólcie sobie go przegapić.'
-      };
-      this.carouselOptions = {
-        slides: [
-          {image: './assets/noworodkowa/1.jpg'},
-          {image: './assets/noworodkowa/2.jpg'},
-          {image: './assets/noworodkowa/3.jpg'},
-          {image: './assets/noworodkowa/4.jpg'},
-          {image: './assets/noworodkowa/5.jpg'},
-          {image: './assets/noworodkowa/6.jpg'},
-          {image: './assets/noworodkowa/7.jpg'},
-          {image: './assets/noworodkowa/8.jpg'},
-          {image: './assets/noworodkowa/9.jpg'},
-        ],
-        itemsPerSlide: 4
-      };
+      this.details = noworodkowa;
+    }
+    if (this.sessionType === SessionType.DZIECIECA) {
+      this.details = dziecieca;
+    }
+    if (this.sessionType === SessionType.SLUBNA) {
+      this.details = slubna;
+    }
+    if (this.sessionType === SessionType.CIAZOWA) {
+      this.details = ciazowa;
+    }
+    if (this.sessionType === SessionType.RODZINNA) {
+      this.details = rodzinna;
+    }
+    if (this.sessionType === SessionType.PORTRETOWA) {
+      this.details = portretowa;
     }
   }
 

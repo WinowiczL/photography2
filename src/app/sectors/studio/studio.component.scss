@@ -48,7 +48,9 @@ $content-selector: "~ .content > section";
   left: 50%;
   transform: translateX(-50%);
   position: relative;
-  padding: 50px 0;
+  @media (min-width: 576px) {
+    padding: 50px 0;
+  }
   width: 100%;
   height: 100%;
   border-radius: 5px;
@@ -233,11 +235,12 @@ $content-selector: "~ .content > section";
     }
   }
 }
-
 .basic-background {
   height: unset;
 }
 
-.cont {
-  padding: 0 40px;
+.image {
+  max-height: 68vh;
+  width: auto;
 }
+

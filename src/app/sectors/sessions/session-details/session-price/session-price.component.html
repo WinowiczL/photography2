@@ -1,47 +1,35 @@
 <div class="price-table-wrapper">
   <div class="pricing-table">
     <h2 class="pricing-table__header__first">- PAKIET MINI -</h2>
-    <h3 class="pricing-table__price">400 zł</h3>
+    <h3 class="pricing-table__price">{{price.mini.price}} zł</h3>
     <div target="_blank" class="pricing-table__button"
          onClick="document.getElementById('kontakt').scrollIntoView({ behavior: 'smooth'})">
       Umów sesję!
     </div>
     <ul class="pricing-table__list">
-      <li>15 zdjęć w formie elektronicznej</li>
-      <li>odbitki 15x23</li>
-      <li>3 stylizacje</li>
-      <li>ujęcia rodzinne</li>
+      <li *ngFor="let inPrice of price.mini.inPrice">{{inPrice}}</li>
     </ul>
   </div>
   <div class="pricing-table">
     <h2 class="pricing-table__header__second">- PAKIET STANDARD -</h2>
-    <h3 class="pricing-table__price">550 zł</h3>
+    <h3 class="pricing-table__price">{{price.standard.price}} zł</h3>
     <div target="_blank" class="pricing-table__button"
          onClick="document.getElementById('kontakt').scrollIntoView({ behavior: 'smooth'})">
       Umów sesję!
     </div>
     <ul class="pricing-table__list">
-      <li>20 zdjęć w formie elektronicznej</li>
-      <li>odbitki 15x23</li>
-      <li>4 stylizacje</li>
-      <li>ujęcia rodzinne</li>
-      <li>obraz na płótnie 30x40</li>
+      <li *ngFor="let inPrice of price.standard.inPrice">{{inPrice}}</li>
     </ul>
   </div>
   <div class="pricing-table">
     <h2 class="pricing-table__header__third">- PAKIET MAX -</h2>
-    <h3 class="pricing-table__price">750 zł</h3>
+    <h3 class="pricing-table__price">{{price.max.price}} zł</h3>
     <div target="_blank" class="pricing-table__button"
          onClick="document.getElementById('kontakt').scrollIntoView({ behavior: 'smooth'})">
       Umów sesję!
     </div>
     <ul class="pricing-table__list">
-      <li>20 zdjęć w formie elektronicznej</li>
-      <li>odbitki 15x23</li>
-      <li>4 stylizacje</li>
-      <li>ujęcia rodzinne</li>
-      <li>wysokiej jakości foto książka</li>
-      <li>obraz na płótnie 60x40</li>
+      <li *ngFor="let inPrice of price.max.inPrice">{{inPrice}}</li>
     </ul>
   </div>
 </div>

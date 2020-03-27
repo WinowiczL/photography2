@@ -10,11 +10,5 @@ import {Carousel} from '../../../../shared/components/carousel/carousel.componen
 export class SessionDescriptionComponent {
 
   @Input()
-  sessionType;
-
-  @Input()
   details: Details;
-
-  @Input()
-  carouselOptions: Carousel;
 }
