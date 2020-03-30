@@ -12,14 +12,6 @@ export class CardsComponent {
   @Output()
   sessionClick = new EventEmitter();
 
-
-  constructor(private service: SessionCommunicationService) {
-  }
-
-  onSessionSelect(sessionType) {
-    this.sessionClick.emit({sessionType, dialogOption: 'OPIS'});
-  }
-
   sessions = [
     {
       imageSrc: sessionTypeImagePath.sesjaNoworodkowa.imagePath,
@@ -76,5 +68,9 @@ export class CardsComponent {
       },
     }
   ];
+
+  onSessionSelect(sessionType) {
+    this.sessionClick.emit({sessionType, dialogOption: 'OPIS'});
+  }
 
 }

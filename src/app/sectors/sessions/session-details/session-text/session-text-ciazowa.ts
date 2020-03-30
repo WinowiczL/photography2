@@ -3,7 +3,7 @@ import {Details} from '../session-details.component';
 
 export const ciazowa: Details = {
   type: SessionType.CIAZOWA,
-  descriptionImage: './assets/sessions/dziecieca.jpg',
+  descriptionImage: './assets/ciazowa/7sesjaciążowa.jpg',
   description: 'Promieniejesz! Wyglądasz pięknie! Ciąża Ci służy! Takie słowa na co dzień słyszysz jako przyszła mama. To dobry moment, aby zdecydować się na ciążową sesję zdjęciową i na dłużej zapamiętać uczucia, jakie towarzyszyły Wam w oczekiwaniu na Wasz mały cud. Sesja ciążowa jest to też doskonała okazja na poznanie mojego studia i stylu pracy, oraz rozwianie ewentualnych wątpliwości i pytań związanych z sesją noworodkową.',
   prepare: [
     'Sesję ciążową najlepiej wykonać między 30 a 35 tygodniem ciąży. Ważne, aby brzuszek był już ładnie zaokrąglony, a przyszła mama czuła się dobrze i komfortowo.',
@@ -21,21 +21,38 @@ export const ciazowa: Details = {
       {image: './assets/ciazowa/3sesjaciążowa.jpg'},
       {image: './assets/ciazowa/4sesjaciążowa.jpg'},
       {image: './assets/ciazowa/5sesjaciążowa.jpg'},
-      {image: './assets/ciazowa/6sesjaciążowa.jpg'}
+      {image: './assets/ciazowa/6sesjaciążowa.jpg'},
+      {image: './assets/ciazowa/7sesjaciążowa.jpg'}
+
     ], itemsPerSlide: 4
   },
   price: {
     mini: {
-      price: 0,
-      inPrice: []
+      price: 350,
+      inPrice: [
+        '10 zdjęć w formie elektronicznej',
+        'odbitki 15x23',
+        '2 stylizacje'
+      ]
     },
     standard: {
-      price: 0,
-      inPrice: []
+      price: 500,
+      inPrice: [
+        '15 zdjęć w formie elektronicznej',
+        'odbitki 15x23',
+        '3 stylizacje',
+        'obraz na płótnie 30x40'
+      ]
     },
     max: {
-      price: 0,
-      inPrice: []
+      price: 700,
+      inPrice: [
+        '15 zdjęć w formie elektronicznej',
+        'odbitki 15x23',
+        '4 stylizacje',
+        'wysokiej jakości foto książka',
+        'obraz na płótnie 60x40'
+      ]
     }
   }
 };

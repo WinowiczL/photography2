@@ -91,7 +91,8 @@ $content-selector: "~ .content > section";
         padding: 5px auto;
         overflow: hidden;
         text-overflow: ellipsis;
-        display: block;
+        display: flex;
+        justify-content: center;
         cursor: pointer;
         -webkit-touch-callout: none;
 

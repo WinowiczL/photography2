@@ -3,7 +3,7 @@ import {Details} from '../session-details.component';
 
 export const portretowa: Details = {
   type: SessionType.PORTRETOWA,
-  descriptionImage: './assets/sessions/dziecieca.jpg',
+  descriptionImage: './assets/portretowa/2sesjaportretowa.jpg',
   description: 'Sesja portretowa to doskonała okazja, by spojrzeć na siebie w nowym świetle. Moim celem jest sprawić, aby każdy z was dostrzegł drzemiące w was piękno, o którym w natłoku codziennych obowiązków zdarza się zapomnieć. Na sesji wspólnie pracujemy nad wydobyciem i wyeksponowaniem największych atutów i tego, co czyni was wyjątkowymi.',
   prepare: [
     'Przed sesją ustalamy, jaki rodzaj sesji Was interesuje. Wśród moich propozycji znajdują się: kobieca, sesja wizerunkowa do celów biznesowych, sesja w plenerze. Jestem otwarta na wasze propozycje i chętnie pomogę w realizacji Waszej wizji.Ogranicza nas jedynie wyobraźnia! ',
@@ -24,16 +24,31 @@ export const portretowa: Details = {
   },
   price: {
     mini: {
-      price: 0,
-      inPrice: []
+      price: 200,
+      inPrice: [
+        '5 zdjęć w formie elektronicznej',
+        'odbitki 15x23',
+        '1 stylizacja',
+      ]
     },
     standard: {
-      price: 0,
-      inPrice: []
+      price: 350,
+      inPrice: [
+        '10 zdjęć w formie elektronicznej',
+        'odbitki 15x23',
+        '2 stylizacje',
+        'obraz na płótnie 30x40'
+      ]
     },
     max: {
-      price: 0,
-      inPrice: []
+      price: 500,
+      inPrice: [
+        '15 zdjęć w formie elektronicznej',
+        'odbitki 15x23',
+        '3 stylizacje',
+        'wysokiej jakości foto książka',
+        'obraz na płótnie 60x40'
+      ]
     }
   }
 };

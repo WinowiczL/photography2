@@ -3,12 +3,13 @@ import {Details} from '../session-details.component';
 
 export const noworodkowa: Details = {
   type: SessionType.NOWORODKOWA,
-  descriptionImage: './assets/noworodkowa/IMG_0683.jpg',
+  descriptionImage: './assets/noworodkowa/4sesjanoworodkowa.jpg',
   description: 'Pierwsze tygodnie, gdy na świat przychodzi dziecko są dla rodziny szczególne. ' +
     'Uwielbiam obserwować, jak podczas sesji wpatrujecie się w nowego członka Waszej rodziny. Przyglądacie się tym małym stópkom, ' +
     'rączkom i buzi z ogromną miłością i czułością. Warto zatrzymać w pamięci te chwile, bo z tygodnia na tydzień maleństwo będzie ' +
     'rosnąć i stale się zmieniać. Sesja noworodkowa to niepowtarzalna pamiątka dla każdego członka rodziny, dlatego nie pozwólcie ' +
-    'sobie go przegapić.',
+    'sobie go przegapić. Wykonuje również niepowtarzalne sesje noworodkowe w waszym domu. Jest to sesja lifestylowa bez pozowania, ' +
+    'skupiająca się na bliskości, naturalności i pokazaniu Waszych pierwszych wspólnych momentów.',
   prepare: [
     'Sesję zdjęciową najlepiej wykonać między 5 a 14 dniem życia maleństwa. Przebiega ona wtedy sprawniej, ponieważ\n maluch\n' +
     'szybciej i głębiej zasypia, jest bardzo elastyczny, przez co bezpiecznie możemy go układać, oraz owijać.',
@@ -31,6 +32,9 @@ export const noworodkowa: Details = {
     '      miejsce do przewijania z przewijakiem i wszystkimi niezbędnymi akcesoriami: pieluchy, chusteczki suche mokre itp.,\n' +
     '      kanapa do odpoczynku dla rodziców, fotel do karmienia, kuchnia i toaleta. Na sesji dbam o to, byście czuli się\n' +
     '      swobodnie i komfortowo a moment naszego spotkania zapamiętali jako mile spędzony czas.',
+    'Nie martw się jeśli twoje dziecko ma na twarzy trądzik noworodkowy, zaczerwienienia czy schodzącą suchą skórkę. ' +
+    'Są to rzeczy powszechne i normalne, które po kilku dniach znikają.  Dlatego cała skóra i drobne niedoskonałości, ' +
+    'podlegają obróbce graficznej i retuszowi, dzięki czemu skóra będzie wyglądała gładko ale przedewszytkim naturalnie. '
   ],
   carouselOptions: {
     slides: [

@@ -3,7 +3,7 @@ import {Details} from '../session-details.component';
 
 export const slubna: Details = {
   type: SessionType.SLUBNA,
-  descriptionImage: './assets/sessions/slub2.jpg',
+  descriptionImage: './assets/slubna/8reportazslubny.jpg',
   description: 'Dzień ślubu zawsze stoi pod znakiem miłości, czułości i wzruszeń. Decydując się na wybór fotografa obdarzacie go ogromnym zaufaniem, dając możliwość towarzyszenia Wam w tym wyjątkowym dniu. Według stosowanej przeze mnie techniki para młoda powinna czuć się swobodnie i być w stanie niemal zapomnieć o mojej obecności, po to, aby skupić się tylko na sobie i cudownym przeżyciu tych niezapomnianych chwil. Reportaż ślubny rozpoczynamy już od samego rana od przygotowań Pani i Pana Młodego aż do Oczepin. Jednak na tym nie kończy się nasza przygoda. W niedalekim czasie od Waszego ślubu spotykamy się ponownie na sesji ślubnej, która jest pięknym podsumowaniem i dopełnieniem pamiątki, która zostanie z Wami już na zawsze.',
   prepare: [
     'Zapoznanie się z ofertą, kontakt telefoniczny bądź mailowy.',
@@ -15,20 +15,52 @@ export const slubna: Details = {
     'Do miesiąca od sesji plenerowej otrzymujecie gotowy materiał ze zdjęciami reportażowymi z wesela oraz sesji plenerowej.'
   ],
   carouselOptions: {
-    slides: [], itemsPerSlide: 4
+    slides: [
+      {image: './assets/slubna/1reportażslubny.jpg'},
+      {image: './assets/slubna/2reportazslubny.jpg'},
+      {image: './assets/slubna/3reportazslubny.jpg'},
+      {image: './assets/slubna/4reportazslubny.jpg'},
+      {image: './assets/slubna/5reportazslubny.jpg'},
+      {image: './assets/slubna/6reportazslubny.jpg'},
+      {image: './assets/slubna/7reportazslubny.jpg'},
+      {image: './assets/slubna/gotowymateriałreportazslubny.jpg'},
+      {image: './assets/slubna/wieczórpanienski.jpg'},
+
+    ], itemsPerSlide: 4
   },
   price: {
     mini: {
-      price: 0,
-      inPrice: []
+      price: 2700,
+      inPrice: [
+        'około obrobionych 700 zdjęć w formie elektronicznej',
+        '20 fotografii w formacie 15x23',
+        'pendrive z gotowymi fotografiami',
+        'link do galerii z możliwością udostępnienia dla gości',
+        'mini sesja pary młodej'
+      ]
     },
     standard: {
-      price: 0,
-      inPrice: []
+      price: 3500,
+      inPrice: [
+        'około obrobionych 700 zdjęć w formie elektronicznej',
+        '20 fotografii w formacie 15x23',
+        'pendrive z gotowymi fotografiami',
+        'link do galerii z możliwością udostępnienia dla gości',
+        'wysokiej jakości foto książka',
+        'sesja plenerowa'
+      ]
     },
     max: {
-      price: 0,
-      inPrice: []
+      price: 4000,
+      inPrice: [
+        'około obrobionych 700 zdjęć w formie elektronicznej',
+        '20 fotografii w formacie 15x23',
+        'pendrive z gotowymi fotografiami',
+        'link do galerii z możliwością udostępnienia dla gości',
+        'trzy wysokiej jakości foto książki',
+        'obraz na płótnie 60x40',
+        'sesja plenerowa'
+      ]
     }
   }
 };

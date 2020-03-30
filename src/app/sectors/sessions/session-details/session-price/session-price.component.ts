@@ -1,5 +1,6 @@
 import {Component, Input} from '@angular/core';
 import {Price} from '../session-details.component';
+import {SessionType} from '../../session-communication.service';
 
 @Component({
   selector: 'app-session-price',
@@ -10,5 +11,8 @@ export class SessionPriceComponent {
 
   @Input()
   price: Price;
+
+  @Input()
+  sessionType: SessionType;
 
 }

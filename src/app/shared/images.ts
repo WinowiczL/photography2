@@ -1,46 +1,26 @@
-
-export const carouselImagePath = {
-  carouselImage1: {
-    imagePath: './assets/carousel/1.JPG',
-    imageAlt: ''
-  },
-  carouselImage2: {
-    imagePath: './assets/carousel/2.JPG',
-    imageAlt: ''
-  },
-  carouselImage3: {
-    imagePath: './assets/carousel/3.JPG',
-    imageAlt: ''
-  },
-  carouselImage4: {
-    imagePath: './assets/carousel/4.JPG',
-    imageAlt: ''
-  }
-};
-
 export const sessionTypeImagePath = {
   sesjaNoworodkowa: {
-    imagePath: './assets/noworodkowa/IMG_0683.jpg',
+    imagePath: './assets/noworodkowa/4sesjanoworodkowa.jpg',
     imageAlt: 'sesja noworodkowa'
   },
   sesjaDziecieca: {
-    imagePath: './assets/sessions/dziecieca.jpg',
-    imageAlt: 'sesja dziecieca'
+    imagePath: './assets/dziecieca/16sesjadziecięca.jpg',
+    imageAlt: 'sesja dziecięca'
   },
   sesjaCiazowa: {
-    imagePath: './assets/sessions/natala2.jpg',
+    imagePath: './assets/ciazowa/7sesjaciążowa.jpg',
     imageAlt: 'sesja ciążowa'
   },
   sesjaRodzinna: {
-    imagePath: './assets/sessions/rodzinna.jpg',
+    imagePath: './assets/rodzinna/8sesjarodzinna.jpg',
     imageAlt: 'sesja rodzinna'
   },
   sesjaPortretowa: {
-    imagePath: './assets/sessions/portret2.jpg',
+    imagePath: './assets/portretowa/2sesjaportretowa.jpg',
     imageAlt: 'sesja portetowa'
   },
   sesjaSlubna: {
-    imagePath: './assets/sessions/slub2.jpg',
-    imageAlt: 'sesja slubna'
+    imagePath: './assets/slubna/8reportazslubny.jpg',
+    imageAlt: 'sesja ślubna'
   }
 };

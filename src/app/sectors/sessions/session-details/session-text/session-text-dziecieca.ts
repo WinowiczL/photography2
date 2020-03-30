@@ -3,7 +3,7 @@ import {Details} from '../session-details.component';
 
 export const dziecieca: Details = {
   type: SessionType.DZIECIECA,
-  descriptionImage: './assets/sessions/dziecieca.jpg',
+  descriptionImage: './assets/dziecieca/16sesjadziecięca.jpg',
   description: 'Dzieci rosną za szybko! Sesja zdjęciowa to sposób zatrzymania na dłużej chwil dziecięcej spontaniczności, beztroski i uśmiechu. Kilkuletnie doświadczenie we współpracy z małymi modelami i modelkami gwarantuje uchwycenie unikalnego charakteru każdego dziecka oraz całe mnóstwo świetnej zabawy! ',
   prepare: [
     'Ustalając godziny sesji zdjęciowej, pamiętaj o porach drzemki swojej pociechy. Wpasowanie terminu w  naturalny rytm dnia sprawia, że dziecko będzie wypoczęte i chętne do zabawy. To wszystko jest przepisem na udaną sesję zdjęciową z mnóstwem pozytywnej energii i ujęć pełnych uśmiechu.',
@@ -36,16 +36,34 @@ export const dziecieca: Details = {
   },
   price: {
     mini: {
-      price: 0,
-      inPrice: []
+      price: 300,
+      inPrice: [
+        '10 zdjęć w formie elektronicznej',
+        'odbitki 15x23',
+        '2 stylizacje',
+        'ujęcia rodzinne'
+      ]
     },
     standard: {
-      price: 0,
-      inPrice: []
+      price: 450,
+      inPrice: [
+        '15 zdjęć w formie elektronicznej',
+        'odbitki 15x23',
+        '2 stylizacje',
+        'ujęcia rodzinne',
+        'obraz na płótnie 30x40'
+      ]
     },
     max: {
-      price: 0,
-      inPrice: []
+      price: 650,
+      inPrice: [
+        '20 zdjęć w formie elektronicznej',
+        'odbitki 15x23',
+        '3 stylizacje',
+        'ujęcia rodzinne',
+        'wysokiej jakości foto książka',
+        'obraz na płótnie 60x40'
+      ]
     }
   }
 };
