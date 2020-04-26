@@ -39,6 +39,9 @@ hr {
 }
 
 .second-background {
+  @media (max-width: 576px) {
+    min-height: unset;
+  }
   min-height: 100vh;
   height: fit-content;
 }

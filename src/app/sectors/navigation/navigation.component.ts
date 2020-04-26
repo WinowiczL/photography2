@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {ActivatedRoute, Router} from '@angular/router';
 
 @Component({
   selector: 'app-navigation',
@@ -7,16 +8,27 @@ import {Component, OnInit} from '@angular/core';
 })
 export class NavigationComponent implements OnInit {
 
-  isCollapsed = true;
 
-  onEvent(event) {
-    event.stopPropagation();
-  }
-
-  constructor() {
+  constructor(private router: Router, private route: ActivatedRoute) {
   }
 
   ngOnInit() {
+    this.route.queryParams.subscribe(params => {
+      if (params.sekcja) {
+        document.getElementById(params.sekcja).scrollIntoView({
+          behavior: 'auto'
+        });
+      }
+    });
+  }
+
+  scrollToElement(element: string) {
+    document.getElementById(element).scrollIntoView({behavior: 'smooth'});
+    this.router.navigate(['/'], {
+      queryParams: {
+        sekcja: element
+      }
+    });
   }
 
 }

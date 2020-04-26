@@ -1,6 +1,6 @@
 <div class="second-background" id="sesje">
   <div class="title basic-color">{{selectedDialog.sessionType ? 'Sesja ' + selectedDialog.sessionType : "Wybierz interesującą cię sesje"}}</div>
-  <div *ngIf="selectedDialog.sessionType" (click)="resetSessionType()" class="basic-color back d-flex align-items-center justify-content-center">
+  <div *ngIf="selectedDialog && selectedDialog.sessionType" (click)="resetSessionType()" class="basic-color back d-flex align-items-center justify-content-center">
     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
          viewBox="0 0 492 492" width="20px" height="20px" style="enable-background:new 0 0 492 492;" xml:space="preserve">
 		<path d="M198.608,246.104L382.664,62.04c5.068-5.056,7.856-11.816,7.856-19.024c0-7.212-2.788-13.968-7.856-19.032l-16.128-16.12
@@ -11,12 +11,7 @@
     <span>cofnij do wyboru sesji</span></div>
   <div class="container">
     <hr *ngIf="!selectedDialog.sessionType" class="separator-line-basic mb-2 mb-lg-5"/>
-    <div *ngIf="!selectedDialog.sessionType">
-      <app-cards (sessionClick)="setSession($event)"></app-cards>
-    </div>
-    <div *ngIf="selectedDialog.sessionType" class="cd">
-      <app-session-details [sessionType]="selectedDialog.sessionType"></app-session-details>
-    </div>
+    <router-outlet></router-outlet>
   </div>
   <div class="row arrow-content d-none d-lg-flex">
     <img src="./assets/pink-down-arrow.svg" class="down-arrow"

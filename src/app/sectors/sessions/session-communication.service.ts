@@ -1,4 +1,5 @@
 import {Injectable} from '@angular/core';
+import {BehaviorSubject, Observable, of, Subject} from 'rxjs';
 
 export enum DialogOption {
   OPIS, CENNIK, PRZYGOTOWANIE
@@ -18,13 +19,13 @@ export enum SessionType {
 })
 export class SessionCommunicationService {
 
-  private selectedDialog: SelectedDialog = {dialogOption: 'OPIS'};
+  private selectedDialog: Subject<SelectedDialog> = new BehaviorSubject<SelectedDialog>({dialogOption: 'OPIS'});
 
   setSelectedDialog(selectedDialog: SelectedDialog) {
-    this.selectedDialog = selectedDialog;
+    this.selectedDialog.next(selectedDialog);
   }
 
-  getSelectedDialog() {
+  getSelectedDialog(): Observable<SelectedDialog> {
     return this.selectedDialog;
   }
 

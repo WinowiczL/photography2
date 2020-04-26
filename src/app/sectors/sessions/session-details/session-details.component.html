@@ -1,9 +1,9 @@
 <div class="tabs">
 
-  <input type="radio" id="tab1" name="tab-control" checked>
-  <input type="radio" id="tab2" name="tab-control">
-  <input type="radio" id="tab3" name="tab-control">
-  <input type="radio" id="tab4" name="tab-control">
+  <input type="radio" id="tab1" name="tab-control" [checked]="dialogType === 'opis'" (click)="selectDialog('opis')">
+  <input type="radio" id="tab2" name="tab-control" [checked]="dialogType === 'portfolio'" (click)="selectDialog('portfolio')">
+  <input type="radio" id="tab3" name="tab-control" [checked]="dialogType === 'cennik'" (click)="selectDialog('cennik')">
+  <input type="radio" id="tab4" name="tab-control" [checked]="dialogType === 'przygotowanie'" (click)="selectDialog('przygotowanie')">
   <ul class="d-flex align-items-center">
 
     <!--Opis-->

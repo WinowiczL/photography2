@@ -1,11 +1,12 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {SessionType} from '../session-communication.service';
+import {SessionCommunicationService, SessionType} from '../session-communication.service';
 import {noworodkowa} from './session-text/session-text-noworodkowa';
 import {dziecieca} from './session-text/session-text-dziecieca';
 import {slubna} from './session-text/session-text-slubna';
 import {ciazowa} from './session-text/session-text-ciazowa';
 import {rodzinna} from './session-text/session-text-rodzinna';
 import {portretowa} from './session-text/session-text-portretowa';
+import {ActivatedRoute, Router} from '@angular/router';
 
 export interface Details {
   type: SessionType;
@@ -45,13 +46,32 @@ export interface Price {
 })
 export class SessionDetailsComponent implements OnInit {
 
-  @Input()
   sessionType;
-
   details: Details;
+  dialogType = 'opis';
+
+  constructor(private route: ActivatedRoute, private service: SessionCommunicationService, private router: Router) {
+  }
 
   ngOnInit() {
-    this.setDetails();
+    this.route.data.subscribe(data => {
+      this.sessionType = data.sessionType;
+      this.setDetails();
+      this.service.setSelectedDialog({sessionType: data.sessionType});
+    });
+    this.route.queryParams.subscribe(params => {
+      this.dialogType = params.szczegoly;
+    });
+
+  }
+
+  selectDialog(dialogType) {
+    this.router.navigate([], {
+      relativeTo: this.route,
+      queryParams: {
+        szczegoly: dialogType
+      }
+    });
   }
 
   private setDetails() {

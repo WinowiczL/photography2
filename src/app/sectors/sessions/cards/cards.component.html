@@ -2,35 +2,35 @@
   <div class="col-lg-4 col-sm-12 mb-2">
     <app-card
       [imageSource]="sessions[0].imageSrc" [cardTitle]="sessions[0].cardTitle"
-      [imageAlt]="sessions[0].imageAlt" (click)="onSessionSelect('noworodkowa')"
+      [imageAlt]="sessions[0].imageAlt" routerLink="sesja/noworodkowa" [queryParams]="{szczegoly: 'opis'}"
     ></app-card>
   </div>
   <div class="col-lg-4 col-sm-12 mb-2">
     <app-card
       [imageSource]="sessions[1].imageSrc" [cardTitle]="sessions[1].cardTitle"
-      [imageAlt]="sessions[1].imageAlt" (click)="onSessionSelect('dziecięca')">
+      [imageAlt]="sessions[1].imageAlt" routerLink="sesja/dziecięca" [queryParams]="{szczegoly: 'opis'}">
     </app-card>
   </div>
   <div class="col-lg-4 col-sm-12 mb-2">
     <app-card
       [imageSource]="sessions[2].imageSrc" [cardTitle]="sessions[2].cardTitle"
-      [imageAlt]="sessions[2].imageAlt" (click)="onSessionSelect('ciążowa')"></app-card>
+      [imageAlt]="sessions[2].imageAlt" routerLink="sesja/ciążowa" [queryParams]="{szczegoly: 'opis'}"></app-card>
   </div>
 </div>
 <div class="row break">
   <div class="col-lg-4 col-sm-12 mb-2">
     <app-card
       [imageSource]="sessions[3].imageSrc" [cardTitle]="sessions[3].cardTitle"
-      [imageAlt]="sessions[3].imageAlt" (click)="onSessionSelect('rodzinna')"></app-card>
+      [imageAlt]="sessions[3].imageAlt" routerLink="sesja/rodzinna" [queryParams]="{szczegoly: 'opis'}"></app-card>
   </div>
   <div class="col-lg-4 col-sm-12 mb-2">
     <app-card
       [imageSource]="sessions[4].imageSrc" [cardTitle]="sessions[4].cardTitle"
-      [imageAlt]="sessions[4].imageAlt" (click)="onSessionSelect('portretowa')"></app-card>
+      [imageAlt]="sessions[4].imageAlt" routerLink="sesja/portretowa" [queryParams]="{szczegoly: 'opis'}"></app-card>
   </div>
   <div class="col-lg-4 col-sm-12 mb-2">
     <app-card
       [imageSource]="sessions[5].imageSrc" [cardTitle]="sessions[5].cardTitle"
-      [imageAlt]="sessions[5].imageAlt" (click)="onSessionSelect('ślubna')"></app-card>
+      [imageAlt]="sessions[5].imageAlt"  routerLink="reportaż/ślubny" [queryParams]="{szczegoly: 'opis'}"></app-card>
   </div>
 </div>
