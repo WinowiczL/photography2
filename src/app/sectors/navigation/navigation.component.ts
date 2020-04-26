@@ -8,27 +8,31 @@ import {ActivatedRoute, Router} from '@angular/router';
 })
 export class NavigationComponent implements OnInit {
 
+  lastSelected = false;
 
   constructor(private router: Router, private route: ActivatedRoute) {
+
   }
 
   ngOnInit() {
     this.route.queryParams.subscribe(params => {
-      if (params.sekcja) {
-        document.getElementById(params.sekcja).scrollIntoView({
-          behavior: 'auto'
-        });
+      if (params.sekcja && !this.lastSelected) {
+        this.lastSelected = true;
+        document.getElementById(params.sekcja).scrollIntoView({behavior: 'auto'});
       }
     });
   }
 
   scrollToElement(element: string) {
-    document.getElementById(element).scrollIntoView({behavior: 'smooth'});
-    this.router.navigate(['/'], {
+    this.router.navigate([], {
       queryParams: {
         sekcja: element
       }
+    }).then(() => {
+      this.lastSelected = true;
+      document.getElementById(element).scrollIntoView({behavior: 'smooth', block: 'start'});
     });
+
   }
 
 }

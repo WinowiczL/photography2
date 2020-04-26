@@ -1,11 +1,5 @@
 @import "../../../assets/styles/custom-styles";
 
-
-.watercolor {
-  background-image: url("../../../../src/assets/watercolor.png");
-  background-size: cover;
-}
-
 .photo{
   height: 100%;
   width: 100%;
@@ -22,9 +16,4 @@ h4 {
 .important-txt {
   font-weight: bold;
   color: black;
-}
-
-.about-me-container {
-  @media (min-width: 576px) {
-  }
 }

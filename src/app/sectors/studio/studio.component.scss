@@ -236,7 +236,10 @@ $content-selector: "~ .content > section";
   }
 }
 .basic-background {
-  height: unset;
+  @media (min-width: 576px) {
+    height: 100vh;
+  }
+
 }
 
 .image {
