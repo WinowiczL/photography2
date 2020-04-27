@@ -70,7 +70,7 @@ export class SessionDetailsComponent implements OnInit {
       relativeTo: this.route,
       queryParams: {
         szczegoly: dialogType
-      }
+      },
     });
   }
 

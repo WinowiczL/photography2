@@ -24,11 +24,16 @@ export class NavigationComponent implements OnInit {
   }
 
   scrollToElement(element: string) {
-    this.router.navigate([], {
+    this.router.navigate(['/'], {
       queryParams: {
         sekcja: element
-      }
+      },
     }).then(() => {
+      this.router.navigate(['/'], {
+        queryParams: {
+          sekcja: element
+        },
+      });
       this.lastSelected = true;
       document.getElementById(element).scrollIntoView({behavior: 'smooth', block: 'start'});
     });
