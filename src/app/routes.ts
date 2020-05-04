@@ -3,6 +3,7 @@ import {CardsComponent} from './sectors/sessions/cards/cards.component';
 import {SessionDetailsComponent} from './sectors/sessions/session-details/session-details.component';
 
 export const appRoutes: Routes = [
+  { path: '/stronaglowna', redirectTo: ''},
   {
     path: '', component: CardsComponent, data: {sessionType: 'none'}
   },
