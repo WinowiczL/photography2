@@ -14,7 +14,7 @@
     "node": "12.14.0",
     "npm": "6.13.4"
   },
-  "homepage": "http://elizamakiej.pl",
+  "homepage": "https://www.elizamakiej.pl",
   "private": false,
   "dependencies": {
     "@angular/animations": "~8.2.14",
