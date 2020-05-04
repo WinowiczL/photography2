@@ -1,0 +1,10 @@
+{
+  "/gets": {
+    "target": "https://winowiczl.github.io/photography2/",
+    "secure": true,
+    "pathRewrite": {
+      "^/gets": ""
+    },
+    "changeOrigin": true
+  }
+}
