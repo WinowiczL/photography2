@@ -14,7 +14,7 @@
     "node": "12.14.0",
     "npm": "6.13.4"
   },
-  "homepage": "https://www.elizamakiej.pl",
+  "homepage": "https://winowiczl.github.io/photography2/",
   "private": false,
   "dependencies": {
     "@angular/animations": "~8.2.14",
