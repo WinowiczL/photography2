@@ -1,5 +1,5 @@
 <div class="second-background" id="sesje">
-  <div class="title basic-color">{{selectedDialog.sessionType ? 'Sesja ' + selectedDialog.sessionType : "Wybierz interesującą cię sesje"}}</div>
+  <div class="title basic-color">{{title}}</div>
   <div *ngIf="selectedDialog && selectedDialog.sessionType" (click)="resetSessionType()" class="basic-color back d-flex align-items-center justify-content-center">
     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
          viewBox="0 0 492 492" width="20px" height="20px" style="enable-background:new 0 0 492 492;" xml:space="preserve">
@@ -12,10 +12,6 @@
   <div class="container">
     <hr *ngIf="!selectedDialog.sessionType" class="separator-line-basic mb-2 mb-lg-5"/>
     <router-outlet></router-outlet>
-  </div>
-  <div class="row arrow-content d-none d-lg-flex">
-    <img src="./assets/pink-down-arrow.svg" class="down-arrow"
-         onClick="document.getElementById('studio').scrollIntoView({ behavior: 'smooth'})"/>
   </div>
 </div>
 

@@ -1,16 +1,32 @@
-import {Component, EventEmitter, Output} from '@angular/core';
+import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 import {sessionTypeImagePath} from '../../../shared/images';
 import {SessionCommunicationService} from '../session-communication.service';
+import {ActivatedRoute, Router} from '@angular/router';
 
 @Component({
   selector: 'app-cards',
   templateUrl: './cards.component.html',
   styleUrls: ['./cards.component.scss']
 })
-export class CardsComponent {
+export class CardsComponent implements OnInit {
 
   @Output()
   sessionClick = new EventEmitter();
+
+  details = 'opis';
+
+  constructor(private route: ActivatedRoute, private service: SessionCommunicationService, private router: Router) {
+
+  }
+
+  ngOnInit(): void {
+    this.route.queryParams.subscribe(params => {
+      if (params.szczegoly) {
+        this.details = params.szczegoly;
+      }
+    });
+  }
+
 
   sessions = [
     {
