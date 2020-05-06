@@ -181,7 +181,10 @@ $content-selector: "~ .content > section";
         }
 
         @media (max-width: map-get($breakpoints, small)) {
-          background: rgba(0, 0, 0, 0.08);
+          background: $thirdColor;
+          svg {
+            fill: white;
+          }
         }
       }
     }

@@ -39,7 +39,7 @@ export const dziecieca: Details = {
       price: 300,
       inPrice: [
         '10 zdjęć w formie elektronicznej',
-        'odbitki 15x23',
+        'te same zdjęcia wydrukowane w formacie 15x23 (jedwab)',
         '2 stylizacje',
         'ujęcia rodzinne'
       ]
@@ -48,7 +48,7 @@ export const dziecieca: Details = {
       price: 450,
       inPrice: [
         '15 zdjęć w formie elektronicznej',
-        'odbitki 15x23',
+        'te same zdjęcia wydrukowane w formacie 15x23 (jedwab)',
         '2 stylizacje',
         'ujęcia rodzinne',
         'obraz na płótnie 30x40'
@@ -58,7 +58,7 @@ export const dziecieca: Details = {
       price: 650,
       inPrice: [
         '20 zdjęć w formie elektronicznej',
-        'odbitki 15x23',
+        'te same zdjęcia wydrukowane w formacie 15x23 (jedwab)',
         '3 stylizacje',
         'ujęcia rodzinne',
         'wysokiej jakości foto książka',

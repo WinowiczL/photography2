@@ -27,7 +27,7 @@ export const portretowa: Details = {
       price: 200,
       inPrice: [
         '5 zdjęć w formie elektronicznej',
-        'odbitki 15x23',
+        'te same zdjęcia wydrukowane w formacie 15x23 (jedwab)',
         '1 stylizacja',
       ]
     },
@@ -35,7 +35,7 @@ export const portretowa: Details = {
       price: 350,
       inPrice: [
         '10 zdjęć w formie elektronicznej',
-        'odbitki 15x23',
+        'te same zdjęcia wydrukowane w formacie 15x23 (jedwab)',
         '2 stylizacje',
         'obraz na płótnie 30x40'
       ]
@@ -44,7 +44,7 @@ export const portretowa: Details = {
       price: 500,
       inPrice: [
         '15 zdjęć w formie elektronicznej',
-        'odbitki 15x23',
+        'te same zdjęcia wydrukowane w formacie 15x23 (jedwab)',
         '3 stylizacje',
         'wysokiej jakości foto książka',
         'obraz na płótnie 60x40'

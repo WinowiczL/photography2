@@ -28,6 +28,10 @@
   border: 1px solid $thirdColor;
 }
 
+button {
+  outline: none !important;
+}
+
 .line {
   height: 4px;
   margin: 0 300px;

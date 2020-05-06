@@ -10,4 +10,7 @@ export class SessionPrepareComponent {
   @Input()
   details;
 
+  @Input()
+  reportaz;
+
 }

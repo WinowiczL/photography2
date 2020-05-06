@@ -59,7 +59,7 @@ export const noworodkowa: Details = {
       price: 400,
       inPrice: [
         '15 zdjęć w formie elektronicznej',
-        'odbitki 15x23',
+        'te same zdjęcia wydrukowane w formacie 15x23 (jedwab)',
         '3 stylizacje',
         'ujęcia rodzinne'
       ]
@@ -68,7 +68,7 @@ export const noworodkowa: Details = {
       price: 550,
       inPrice: [
         '20 zdjęć w formie elektronicznej',
-        'odbitki 15x23',
+        'te same zdjęcia wydrukowane w formacie 15x23 (jedwab)',
         '4 stylizacje',
         'ujęcia rodzinne',
         'obraz na płótnie 30x40'
@@ -78,7 +78,7 @@ export const noworodkowa: Details = {
       price: 750,
       inPrice: [
         '20 zdjęć w formie elektronicznej',
-        'odbitki 15x23',
+        'te same zdjęcia wydrukowane w formacie 15x23 (jedwab)',
         '4 stylizacje',
         'ujęcia rodzinne',
         'wysokiej jakości foto książka',

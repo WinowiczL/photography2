@@ -11,10 +11,10 @@ export const appRoutes: Routes = [
     path: 'sesja/noworodkowa', component: SessionDetailsComponent, data: {sessionType: 'noworodkowa'}
   },
   {
-    path: 'sesja/dziecięca', component: SessionDetailsComponent, data: {sessionType: 'dziecięca'}
+    path: 'sesja/dziecieca', component: SessionDetailsComponent, data: {sessionType: 'dziecieca'}
   },
   {
-    path: 'sesja/ciążowa', component: SessionDetailsComponent, data: {sessionType: 'ciążowa'}
+    path: 'sesja/ciazowa', component: SessionDetailsComponent, data: {sessionType: 'ciazowa'}
   },
   {
     path: 'sesja/rodzinna', component: SessionDetailsComponent, data: {sessionType: 'rodzinna'}
@@ -23,7 +23,7 @@ export const appRoutes: Routes = [
     path: 'sesja/portretowa', component: SessionDetailsComponent, data: {sessionType: 'portretowa'}
   },
   {
-    path: 'reportaż/ślubny', component: SessionDetailsComponent, data: {sessionType: 'ślubna'}
+    path: 'reportaz/slubny', component: SessionDetailsComponent, data: {sessionType: 'slubna'}
   }
 
 ];

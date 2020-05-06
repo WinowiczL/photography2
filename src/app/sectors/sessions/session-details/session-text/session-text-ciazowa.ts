@@ -31,7 +31,7 @@ export const ciazowa: Details = {
       price: 350,
       inPrice: [
         '10 zdjęć w formie elektronicznej',
-        'odbitki 15x23',
+        'te same zdjęcia wydrukowane w formacie 15x23 (jedwab)',
         '2 stylizacje'
       ]
     },
@@ -39,7 +39,7 @@ export const ciazowa: Details = {
       price: 500,
       inPrice: [
         '15 zdjęć w formie elektronicznej',
-        'odbitki 15x23',
+        'te same zdjęcia wydrukowane w formacie 15x23 (jedwab)',
         '3 stylizacje',
         'obraz na płótnie 30x40'
       ]
@@ -48,7 +48,7 @@ export const ciazowa: Details = {
       price: 700,
       inPrice: [
         '15 zdjęć w formie elektronicznej',
-        'odbitki 15x23',
+        'te same zdjęcia wydrukowane w formacie 15x23 (jedwab)',
         '4 stylizacje',
         'wysokiej jakości foto książka',
         'obraz na płótnie 60x40'

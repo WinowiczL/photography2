@@ -110,7 +110,7 @@
 		s-0.271-1.729-0.271-1.729C41.471,8.015,36.971,6,32,6z"/>
 </g>
 </svg>
-      <br><span>{{sessionType === "ślubna" ? 'Etapy naszej współpracy' : 'Przygotowanie'}}</span></label></li>
+      <br><span>{{sessionType === "slubna" ? 'Etapy naszej współpracy' : 'Przygotowanie'}}</span></label></li>
 
 
   </ul>
@@ -134,8 +134,8 @@
     </section>
 
     <section>
-      <h2>{{sessionType === "ślubna" ? 'Etapy naszej współpracy' : 'Przygotowanie'}}</h2>
-      <app-session-prepare [details]="details.prepare"></app-session-prepare>
+      <h2>{{sessionType === "slubna" ? 'Etapy naszej współpracy' : 'Przygotowanie'}}</h2>
+      <app-session-prepare [details]="details.prepare" [reportaz]="sessionType === 'slubna'"></app-session-prepare>
     </section>
   </div>
 </div>
