@@ -17,7 +17,7 @@ export class SessionsComponent implements OnInit {
 
   ngOnInit(): void {
     this.route.queryParams.subscribe(params => {
-      if (!params.szczegoly) {
+      if (params.sekcja) {
         this.title = this.setTitle(null);
         this.selectedDialog.sessionType = null;
       }
