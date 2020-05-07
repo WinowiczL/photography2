@@ -54,7 +54,7 @@ export class SessionsComponent implements OnInit {
       return 'Sesja portretowa';
     }
     if (sessionType === 'slubna') {
-      return 'Reportż ślubny';
+      return 'Reportaż ślubny';
     }
     return 'Wybierz interesującą cię sesję';
   }
